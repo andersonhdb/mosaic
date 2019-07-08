@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Porter';
+  src: url('porter_bold-webfont.woff2') format('woff2'),
+       url('porter_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // RESET //
 
 body {
@@ -26,6 +34,12 @@ canvas {
   }
 }
 
+// Typography //
+
+h1 {
+  font-size: 35pt;
+}
+
 // Main Content //
 
 main {
@@ -36,10 +50,19 @@ main {
   }
 
   #about {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url("../images/x-img.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
+
+    #about-text {
+      display: inline-block;
+      width: 25vw;
+      font-family: 'Porter', sans-serif;
+    }
   }
   
 }
