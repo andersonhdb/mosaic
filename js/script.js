@@ -1,3 +1,36 @@
+var cur_date = new Date("November 9, 2019 00:00:01");
+var countDownDate = cur_date.getTime();
+
+var n = cur_date.toDateString();
+var time = cur_date.toLocaleTimeString();
+
+document.getElementById("expired_date").innerHTML = n + ' ' + time;
+
+$(document).ready(function() {
+  var x = setInterval(function() {
+
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("t_d").innerHTML = days;
+    document.getElementById("t_h").innerHTML = hours;
+    document.getElementById("t_m").innerHTML = minutes;
+    document.getElementById("t_s").innerHTML = seconds;
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown_timer").innerHTML = "EXPIRED";
+    }
+    
+  }, 1000);
+});
+
 particlesJS("particles", {
   "particles": {
     "number": {

@@ -1,14 +1,31 @@
 @font-face {
   font-family: 'Porter';
   src: url('porter_bold-webfont.woff2') format('woff2'),
-       url('porter_bold-webfont.woff') format('woff');
+    url('porter_bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Hind Jalandhar';
+  src: url('HindJalandhar-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Hind Jalandhar';
+  src: url('HindJalandhar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Karla:700&display=swap');
+
 // RESET //
 
 body {
+  font-family: 'Porter', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -28,16 +45,30 @@ canvas {
   height: 100%;
 
   canvas {
-    position:fixed; 
-    top:0;
-    left:0
+    position: fixed;
+    top: 0;
+    left: 0
   }
 }
 
 // Typography //
 
 h1 {
-  font-size: 35pt;
+  font-family: 'Hind Jalandhar', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+  span {
+    font-family: 'Porter', sans-serif;
+  }
+}
+
+h2 {
+  font-family: 'Hind Jalandhar', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  text-transform: capitalize;
 }
 
 // Main Content //
@@ -47,22 +78,141 @@ main {
   #intro {
     width: 100vw;
     height: 100vh;
+
+    #branding {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 30%;
+      padding: 3em 3em 0;
+
+      img {
+        height: 30px;
+      }
+    }
+
+    #countdown-container {
+      width: 50%;
+      top: 40vh;
+      left: 4vw;
+      position: relative;
+    }
+
+    #countdown_timer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        color: #fff;
+        width: 9%;
+      }
+
+      table {
+        width: 58em;
+        margin-left: -2em;
+      }
+
+      span {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding: 0 0.3em;
+      }
+
+      th {
+        font-weight: 400;
+        font-size: 5em;
+        color: #fff;
+
+        &:nth-child(odd) {
+          max-width: 100px;
+        }
+      }
+
+      p {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        display: block;
+      }
+    }
+
+    #clock {
+      float: right;
+      position: relative;
+      bottom: 35vh;
+    }
+
+    #scroll-msg {
+      font-family: 'Hind Jalandhar', sans-serif;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      padding-bottom: 1em;
+    }
   }
 
   #about {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    background-image: url("../images/x-img.png");
-    background-size: cover;
+    // background-image: url("../images/x-img.png");
+    background: #fff;
+    background-size: auto;
     width: 100vw;
-    height: 100vh;
+    height: 113vh;
 
-    #about-text {
-      display: inline-block;
+    #x-graphic {
+      font-size: 850px;
+    }
+
+    #about-container {
       width: 25vw;
-      font-family: 'Porter', sans-serif;
+
+      #about-heading {
+        display: inline-block;
+        -webkit-text-fill-color: black;
+
+        img {
+          padding: 1em 0;
+          margin-left: -25%;
+        }
+      }
+
+      p {
+        font-family: 'Hind Jalandhar', sans-serif;
+        font-weight: normal;
+        color: #000;
+        font-size: 16px;
+        line-height: 40px;
+      }
+
+      #social-media-links {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Porter', sans-serif;
+        font-weight: bold;
+        padding-top: 3em;
+
+        a {
+          color: #000;
+          text-decoration: none;
+          border-bottom: solid 3px #000;
+          padding-bottom: 0.3em;
+        }
+      }
     }
   }
-  
+
 }

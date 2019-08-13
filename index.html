@@ -5,18 +5,72 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>TEDx SFU 2019 | Mosaic</title>
   <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link href="js/vendor/fontawesome/css/all.css" rel="stylesheet">
   <script type="text/javascript" src="js/vendor/particles.js-master/particles.min.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 
 <body>
   <div id="particles"></div>
   <main>
-    <div id="intro"></div>
-    <div id="about">
-        <div id="about-text">
-            <h1>Mosaic</h1>
+    <div id="intro">
+      <div id="branding">
+        <img src="images/tedx.png" alt="TEDx SFU logo" id="tedx-logo" />
+        <img src="images/mosaic.png" alt="Mosaic logo" id="mosaic-logo" />
+      </div>
+      <div id="countdown-container">
+        <h2>Countdown to Ticket Sales</h2>
+        <div id="countdown_timer">
+          <table>
+            <tr>
+              <th><span id="t_d"></span></th>
+              <th>:</th>
+              <th><span id="t_h"></span></th>
+              <th>:</th>
+              <th><span id="t_m"></span></th>
+              <th>:</th>
+              <th><span id="t_s"></span></th>
+            </tr>
+            <tr>
+              <td>
+                <p>days</p>
+              </td>
+              <td></td>
+              <td>
+                <p>hours</p>
+              </td>
+              <td></td>
+              <td>
+                <p>minutes</p>
+              </td>
+              <td></td>
+              <td>
+                <p>seconds</p>
+              </td>
+            </tr>
+          </table>
         </div>
+      </div>
+      <p style="display:none">(Until <span id="expired_date"></span>)</p>
+      <img src="images/clock.png" alt="white clock" id="clock" />
+      <div id="scroll-msg">
+        <h3>Discover more <i class="fas fa-angle-down"></i></h3>
+      </div>
+    </div>
+    <div id="about">
+      <div id="x-graphic">X</div>
+      <div id="about-container">
+        <div id="about-heading">
+          <h1>Theme of 2019 - <span>Mosaic</span></h1>
+          <img src="images/mosaic-build.png"" alt=" Building a Mosaic" id="mosaic-build" />
+        </div>
+        <p id="about-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div id="social-media-links">
+          <a href="https://www.facebook.com/TEDxSFU" id="facebook">Facebook</a>
+          <a href="https://www.instagram.com/tedxsfu/" id="instagram">Instagram</a>
+        </div>
+      </div>
     </div>
   </main>
 </body>
