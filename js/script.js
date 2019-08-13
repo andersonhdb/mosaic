@@ -31,6 +31,10 @@ $(document).ready(function() {
   }, 1000);
 });
 
+$(window).scroll(function(){
+  $("#scroll-msg").css("opacity", 1 - $(window).scrollTop() / 400);
+});
+
 particlesJS("particles", {
   "particles": {
     "number": {
