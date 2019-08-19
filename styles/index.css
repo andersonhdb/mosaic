@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:700&display=swap");
 @font-face {
   font-family: 'Porter';
-  src: url("porter_bold-webfont.woff2") format("woff2"), url("porter_bold-webfont.woff") format("woff");
+  src: url("fonts/porter_bold-webfont.woff2") format("woff2"), url("fonts/porter_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Hind Jalandhar';
-  src: url("HindJalandhar-Bold.ttf") format("truetype");
+  src: url("fonts/HindJalandhar-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold; }
 
 @font-face {
   font-family: 'Hind Jalandhar';
-  src: url("HindJalandhar-Regular.ttf") format("truetype");
+  src: url("fonts/HindJalandhar-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -28,6 +28,9 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #000; }
+  @media screen and (max-width: 600px) {
+    body {
+      zoom: 95%; } }
 
 canvas {
   display: block;
@@ -59,6 +62,10 @@ h2 {
 main #intro {
   width: 100vw;
   height: 100vh; }
+  @media screen and (max-width: 600px) {
+    main #intro {
+      height: 106vh;
+      margin-left: 1em; } }
   main #intro #branding {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,30 +81,97 @@ main #intro {
     padding: 3em 3em 0; }
     main #intro #branding img {
       height: 30px; }
+    @media screen and (min-width: 1400px) {
+      main #intro #branding {
+        width: 26%; } }
+    @media screen and (max-width: 600px) {
+      main #intro #branding {
+        width: 85%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        padding: 3em 0 1em;
+        margin: 0 auto; } }
   main #intro #countdown-container {
-    width: 50%;
-    top: 40vh;
+    width: 54vw;
+    top: 38vh;
     left: 4vw;
     position: relative; }
+    @media screen and (max-width: 1300px) {
+      main #intro #countdown-container {
+        width: 60vw; } }
+    @media screen and (max-width: 992px) {
+      main #intro #countdown-container {
+        width: 80vw; } }
+    @media screen and (max-width: 600px) {
+      main #intro #countdown-container {
+        width: 90vw;
+        top: 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        main #intro #countdown-container #countdown_timer h2 {
+          text-align: center;
+          padding: 0;
+          width: 100%; }
+        main #intro #countdown-container #countdown_timer table {
+          display: inline-block;
+          width: unset; }
+        main #intro #countdown-container #countdown_timer tr {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+        main #intro #countdown-container #countdown_timer th:nth-child(even), main #intro #countdown-container #countdown_timer p {
+          display: none; }
+        main #intro #countdown-container #countdown_timer th p {
+          display: block !important; } }
   main #intro #countdown_timer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    main #intro #countdown_timer h2 {
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      padding-left: 1em; }
+      main #intro #countdown_timer h2 {
+        font-size: 20px; }
+        @media screen and (min-width: 425px) {
+          main #intro #countdown_timer h2 {
+            font-size: calc(20px + 5 * ((100vw - 425px) / 1015)); } }
+        @media screen and (min-width: 1440px) {
+          main #intro #countdown_timer h2 {
+            font-size: 25px; } }
+      @media screen and (max-width: 992px) {
+        main #intro #countdown_timer h2 {
+          padding-left: 0.5em; } }
+      @media screen and (max-width: 600px) {
+        main #intro #countdown_timer h2 {
+          margin-bottom: 0; } }
     main #intro #countdown_timer img {
       color: #fff;
       width: 9%; }
     main #intro #countdown_timer table {
-      width: 58em;
+      width: 100%;
       margin-left: -2em; }
     main #intro #countdown_timer span {
       font-family: 'Karla', sans-serif;
@@ -106,12 +180,27 @@ main #intro {
       color: white;
       margin: 0;
       padding: 0 0.3em; }
+      main #intro #countdown_timer span {
+        font-size: 63px; }
+        @media screen and (min-width: 425px) {
+          main #intro #countdown_timer span {
+            font-size: calc(63px + 33 * ((100vw - 425px) / 1015)); } }
+        @media screen and (min-width: 1440px) {
+          main #intro #countdown_timer span {
+            font-size: 96px; } }
     main #intro #countdown_timer th {
       font-weight: 400;
       font-size: 5em;
       color: #fff; }
       main #intro #countdown_timer th:nth-child(odd) {
         max-width: 100px; }
+      main #intro #countdown_timer th p {
+        display: none !important;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        display: block; }
     main #intro #countdown_timer p {
       font-size: 1.3em;
       text-transform: uppercase;
@@ -121,18 +210,37 @@ main #intro {
   main #intro #clock {
     float: right;
     position: relative;
-    bottom: 35vh; }
+    bottom: 12vw;
+    width: 45vw;
+    max-width: 635px; }
+    @media screen and (min-width: 1440px) {
+      main #intro #clock {
+        bottom: 18vw; } }
+    @media screen and (max-width: 1440px) {
+      main #intro #clock {
+        bottom: 21vw;
+        width: 40vw; } }
+    @media screen and (max-width: 992px) {
+      main #intro #clock {
+        bottom: 33vw; } }
+    @media screen and (max-width: 600px) {
+      main #intro #clock {
+        display: none; } }
   main #intro #scroll-msg {
     font-family: 'Hind Jalandhar', sans-serif;
     font-weight: bold;
     color: white;
     text-align: center;
-    display: inline-block;
-    margin: 0 auto;
-    position: absolute;
     bottom: 0;
-    left: 45%;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute; }
 
 main #about {
   display: -webkit-box;
@@ -153,7 +261,8 @@ main #about {
   width: 100vw;
   height: 113vh; }
   main #about #x-graphic {
-    font-size: 850px; }
+    font-size: 850px;
+    line-height: 0; }
   main #about #about-container {
     width: 25vw; }
     main #about #about-container #about-heading {
@@ -162,6 +271,9 @@ main #about {
       main #about #about-container #about-heading img {
         padding: 1em 0;
         margin-left: -25%; }
+    @media screen and (min-width: 1400px) {
+      main #about #about-container #about-heading img {
+        margin-left: -16%; } }
     main #about #about-container p {
       font-family: 'Hind Jalandhar', sans-serif;
       font-weight: normal;
@@ -182,4 +294,62 @@ main #about {
         color: #000;
         text-decoration: none;
         border-bottom: solid 3px #000;
+        padding-bottom: 0.3em; }
+
+#under-construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
+  #under-construction h1, #under-construction p {
+    text-align: center;
+    color: white; }
+  #under-construction h1 {
+    font-family: "Porter", sans-serif; }
+  #under-construction p {
+    font-family: "Hind Jalandhar", sans-serif; }
+  #under-construction #branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%; }
+    #under-construction #branding img {
+      height: 30px; }
+      #under-construction #branding img:first-of-type {
+        padding-right: 1em; }
+  #under-construction #message {
+    width: 25vw;
+    min-width: 350px;
+    padding: 2em; }
+    #under-construction #message #social-media-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-family: 'Porter', sans-serif;
+      font-weight: bold;
+      padding-top: 1.5em; }
+      #under-construction #message #social-media-links a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: solid 3px #fff;
         padding-bottom: 0.3em; }

@@ -1,26 +1,51 @@
 @font-face {
   font-family: 'Porter';
-  src: url('porter_bold-webfont.woff2') format('woff2'),
-    url('porter_bold-webfont.woff') format('woff');
+  src: url('fonts/porter_bold-webfont.woff2') format('woff2'),
+    url('fonts/porter_bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Hind Jalandhar';
-  src: url('HindJalandhar-Bold.ttf') format('truetype');
+  src: url('fonts/HindJalandhar-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: bold;
 }
 
 @font-face {
   font-family: 'Hind Jalandhar';
-  src: url('HindJalandhar-Regular.ttf') format('truetype');
+  src: url('fonts/HindJalandhar-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Karla:700&display=swap');
+
+// MIXINS
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
 
 // RESET //
 
@@ -30,6 +55,10 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #000;
+
+  @media screen and (max-width: 600px) {
+    zoom: 95%;
+  }
 }
 
 canvas {
@@ -79,6 +108,11 @@ main {
     width: 100vw;
     height: 100vh;
 
+    @media screen and (max-width: 600px) {
+      height: 106vh;
+      margin-left: 1em;
+    }
+
     #branding {
       display: flex;
       flex-direction: row;
@@ -89,20 +123,88 @@ main {
       img {
         height: 30px;
       }
+
+      @media screen and (min-width: 1400px) {
+        width: 26%;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 85%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 3em 0 1em;
+        margin: 0 auto;
+      }
     }
 
     #countdown-container {
-      width: 50%;
-      top: 40vh;
+      width: 54vw;
+      top: 38vh;
       left: 4vw;
       position: relative;
+
+      @media screen and (max-width: 1300px) {
+        width: 60vw;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 80vw;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 90vw;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+
+        #countdown_timer {
+
+          h2 {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+          }
+
+          table {
+            display: inline-block;
+            width: unset;
+          }
+
+          tr {
+            display: flex;
+            flex-direction: column;
+          }
+
+          th:nth-child(even), p {
+            display: none;
+          }
+
+          th p {
+            display: block !important;
+          }
+        }
+      }
     }
 
     #countdown_timer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      h2 {
+        @include fluid-type(425px, 1440px, 20px, 25px);
+        align-self: flex-start;
+        padding-left: 1em;
+
+        @media screen and (max-width: 992px) {
+          padding-left: 0.5em;
+        }
+
+        @media screen and (max-width: 600px) {
+          margin-bottom: 0;
+        }
+      }
 
       img {
         color: #fff;
@@ -110,11 +212,12 @@ main {
       }
 
       table {
-        width: 58em;
+        width: 100%;
         margin-left: -2em;
       }
 
       span {
+        @include fluid-type(425px, 1440px, 63px, 96px);
         font-family: 'Karla', sans-serif;
         font-weight: 700;
         text-align: center;
@@ -131,6 +234,15 @@ main {
         &:nth-child(odd) {
           max-width: 100px;
         }
+
+        p {
+          display: none !important;
+          font-size: 15px;
+          text-transform: uppercase;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.5);
+          display: block;
+        }
       }
 
       p {
@@ -145,7 +257,26 @@ main {
     #clock {
       float: right;
       position: relative;
-      bottom: 35vh;
+      bottom: 12vw;
+      width: 45vw;
+      max-width: 635px;
+
+      @media screen and (min-width: 1440px) {
+        bottom: 18vw;
+      }
+
+      @media screen and (max-width: 1440px) {
+        bottom: 21vw;
+        width: 40vw;
+      }
+
+      @media screen and (max-width: 992px) {
+        bottom: 33vw;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
     #scroll-msg {
@@ -153,12 +284,13 @@ main {
       font-weight: bold;
       color: white;
       text-align: center;
-      display: inline-block;
-      margin: 0 auto;
-      position: absolute;
       bottom: 0;
-      left: 45%;
       padding-bottom: 1em;
+
+      display: flex;
+      width: 95%;
+      justify-content: center;
+      position: absolute;
     }
   }
 
@@ -173,8 +305,13 @@ main {
     width: 100vw;
     height: 113vh;
 
+    // @-moz-document url-prefix() {
+    //   height: unset;
+    // }
+
     #x-graphic {
       font-size: 850px;
+      line-height: 0;
     }
 
     #about-container {
@@ -187,6 +324,12 @@ main {
         img {
           padding: 1em 0;
           margin-left: -25%;
+        }
+      }
+
+      @media screen and (min-width: 1400px) {
+        #about-heading img {
+          margin-left: -16%;
         }
       }
 
@@ -215,4 +358,63 @@ main {
     }
   }
 
+}
+
+// UNDER CONSTRUCTION
+
+#under-construction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  h1, p {
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-family: "Porter", sans-serif;
+  }
+
+  p {
+    font-family: "Hind Jalandhar", sans-serif;
+  }
+
+  #branding {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    img {
+      height: 30px;
+
+      &:first-of-type {
+        padding-right: 1em;
+      }
+    }
+  }
+
+  #message {
+    width: 25vw;
+    min-width: 350px;
+    padding: 2em;
+
+    #social-media-links {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Porter', sans-serif;
+      font-weight: bold;
+      padding-top: 1.5em;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: solid 3px #fff;
+        padding-bottom: 0.3em;
+      }
+    }
+  }
 }
