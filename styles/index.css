@@ -262,7 +262,7 @@ main #intro {
         width: 95vw; }
       @-moz-document url-prefix() {
         main #intro #scroll-msg {
-          bottom: 1em; } } }
+          bottom: -1em; } } }
 
 main #about {
   display: -webkit-box;
