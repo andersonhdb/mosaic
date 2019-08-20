@@ -107,7 +107,8 @@ main {
 
     @media screen and (max-width: 600px) {
       height: 106vh;
-      // margin-left: 1em;
+      zoom: 90%;
+      margin: auto;
     }
 
     #branding {
@@ -308,7 +309,7 @@ main {
 
       @media screen and (max-width: 600px) {
         width: 95vw;
-        bottom: -1em;
+        bottom: 4em;
       }
     }
   }
