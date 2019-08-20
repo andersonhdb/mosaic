@@ -55,6 +55,7 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #000;
+  overflow-x: hidden;
 
   @media screen and (max-width: 600px) {
     zoom: 95%;
@@ -110,22 +111,30 @@ main {
 
     @media screen and (max-width: 600px) {
       height: 106vh;
-      margin-left: 1em;
+      // margin-left: 1em;
     }
 
     #branding {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 30%;
+      width: 26%;
       padding: 3em 3em 0;
 
       img {
         height: 30px;
       }
 
-      @media screen and (min-width: 1400px) {
-        width: 26%;
+      @media screen and (min-width: 992px) and (max-width: 1440px) {
+        width: 30%;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 60%;
       }
 
       @media screen and (max-width: 600px) {
@@ -139,7 +148,7 @@ main {
 
     #countdown-container {
       width: 54vw;
-      top: 38vh;
+      top: 30vh;
       left: 4vw;
       position: relative;
 
@@ -154,6 +163,7 @@ main {
       @media screen and (max-width: 600px) {
         width: 90vw;
         top: 0;
+        left: 5vw;
         align-items: center;
         justify-content: center;
 
@@ -181,6 +191,7 @@ main {
 
           th p {
             display: block !important;
+            line-height: 0;
           }
         }
       }
@@ -259,7 +270,7 @@ main {
       position: relative;
       bottom: 12vw;
       width: 45vw;
-      max-width: 635px;
+      max-width: 535px;
 
       @media screen and (min-width: 1440px) {
         bottom: 18vw;
@@ -267,11 +278,12 @@ main {
 
       @media screen and (max-width: 1440px) {
         bottom: 21vw;
-        width: 40vw;
+        width: 35vw;
       }
 
       @media screen and (max-width: 992px) {
-        bottom: 33vw;
+        bottom: 30vw;
+        width: 30vw;
       }
 
       @media screen and (max-width: 600px) {
@@ -288,9 +300,14 @@ main {
       padding-bottom: 1em;
 
       display: flex;
-      width: 95%;
+      width: 100vw;
       justify-content: center;
       position: absolute;
+
+      @media screen and (max-width: 600px) {
+        width: 95vw;
+        bottom: 1em;
+      }
     }
   }
 
@@ -299,18 +316,45 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    // background-image: url("../images/x-img.png");
     background: #fff;
     background-size: auto;
     width: 100vw;
     height: 113vh;
+    padding-bottom: 1em;
 
-    // @-moz-document url-prefix() {
-    //   height: unset;
-    // }
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      padding: 5em 0 13em;
+
+      #about-container {
+        width: 75vw !important;
+      }
+
+      #x-graphic {
+        line-height: 1em !important;
+      }
+
+      #about-heading img {
+        margin-left: 0 !important;
+        width: 45vw !important;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 103vw;
+      padding-bottom: 0;
+
+      #x-graphic {
+        display: none;
+      }
+
+      #about-heading img {
+        width: 74vw !important;
+      }
+    }
 
     #x-graphic {
-      font-size: 850px;
+      @include fluid-type(425px, 1440px, 400px, 850px);
       line-height: 0;
     }
 
@@ -318,18 +362,27 @@ main {
       width: 25vw;
 
       #about-heading {
-        display: inline-block;
+        display: block;
         -webkit-text-fill-color: black;
 
         img {
           padding: 1em 0;
-          margin-left: -25%;
+          position: relative;
+          width: 40vw;
+          max-width: 575px;
         }
       }
 
       @media screen and (min-width: 1400px) {
         #about-heading img {
-          margin-left: -16%;
+          margin-left: -28%;
+        }
+      }
+
+      @media screen and (max-width: 1440px) {
+        #about-heading img {
+          margin-left: -15%;
+          width: 30vw;
         }
       }
 

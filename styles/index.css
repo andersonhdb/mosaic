@@ -27,7 +27,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  background-color: #000; }
+  background-color: #000;
+  overflow-x: hidden; }
   @media screen and (max-width: 600px) {
     body {
       zoom: 95%; } }
@@ -64,8 +65,7 @@ main #intro {
   height: 100vh; }
   @media screen and (max-width: 600px) {
     main #intro {
-      height: 106vh;
-      margin-left: 1em; } }
+      height: 106vh; } }
   main #intro #branding {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -77,13 +77,19 @@ main #intro {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 30%;
+    width: 26%;
     padding: 3em 3em 0; }
     main #intro #branding img {
       height: 30px; }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 992px) and (max-width: 1440px) {
       main #intro #branding {
-        width: 26%; } }
+        width: 30%; } }
+    @media screen and (max-width: 992px) {
+      main #intro #branding {
+        width: 50%; } }
+    @media screen and (max-width: 800px) {
+      main #intro #branding {
+        width: 60%; } }
     @media screen and (max-width: 600px) {
       main #intro #branding {
         width: 85%;
@@ -97,7 +103,7 @@ main #intro {
         margin: 0 auto; } }
   main #intro #countdown-container {
     width: 54vw;
-    top: 38vh;
+    top: 30vh;
     left: 4vw;
     position: relative; }
     @media screen and (max-width: 1300px) {
@@ -110,6 +116,7 @@ main #intro {
       main #intro #countdown-container {
         width: 90vw;
         top: 0;
+        left: 5vw;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -134,7 +141,8 @@ main #intro {
         main #intro #countdown-container #countdown_timer th:nth-child(even), main #intro #countdown-container #countdown_timer p {
           display: none; }
         main #intro #countdown-container #countdown_timer th p {
-          display: block !important; } }
+          display: block !important;
+          line-height: 0; } }
   main #intro #countdown_timer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,17 +220,18 @@ main #intro {
     position: relative;
     bottom: 12vw;
     width: 45vw;
-    max-width: 635px; }
+    max-width: 535px; }
     @media screen and (min-width: 1440px) {
       main #intro #clock {
         bottom: 18vw; } }
     @media screen and (max-width: 1440px) {
       main #intro #clock {
         bottom: 21vw;
-        width: 40vw; } }
+        width: 35vw; } }
     @media screen and (max-width: 992px) {
       main #intro #clock {
-        bottom: 33vw; } }
+        bottom: 30vw;
+        width: 30vw; } }
     @media screen and (max-width: 600px) {
       main #intro #clock {
         display: none; } }
@@ -236,11 +245,15 @@ main #intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 95%;
+    width: 100vw;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     position: absolute; }
+    @media screen and (max-width: 600px) {
+      main #intro #scroll-msg {
+        width: 95vw;
+        bottom: 1em; } }
 
 main #about {
   display: -webkit-box;
@@ -259,21 +272,57 @@ main #about {
   background: #fff;
   background-size: auto;
   width: 100vw;
-  height: 113vh; }
+  height: 113vh;
+  padding-bottom: 1em; }
+  @media screen and (max-width: 992px) {
+    main #about {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 5em 0 13em; }
+      main #about #about-container {
+        width: 75vw !important; }
+      main #about #x-graphic {
+        line-height: 1em !important; }
+      main #about #about-heading img {
+        margin-left: 0 !important;
+        width: 45vw !important; } }
+  @media screen and (max-width: 600px) {
+    main #about {
+      width: 103vw;
+      padding-bottom: 0; }
+      main #about #x-graphic {
+        display: none; }
+      main #about #about-heading img {
+        width: 74vw !important; } }
   main #about #x-graphic {
-    font-size: 850px;
     line-height: 0; }
+    main #about #x-graphic {
+      font-size: 400px; }
+      @media screen and (min-width: 425px) {
+        main #about #x-graphic {
+          font-size: calc(400px + 450 * ((100vw - 425px) / 1015)); } }
+      @media screen and (min-width: 1440px) {
+        main #about #x-graphic {
+          font-size: 850px; } }
   main #about #about-container {
     width: 25vw; }
     main #about #about-container #about-heading {
-      display: inline-block;
+      display: block;
       -webkit-text-fill-color: black; }
       main #about #about-container #about-heading img {
         padding: 1em 0;
-        margin-left: -25%; }
+        position: relative;
+        width: 40vw;
+        max-width: 575px; }
     @media screen and (min-width: 1400px) {
       main #about #about-container #about-heading img {
-        margin-left: -16%; } }
+        margin-left: -28%; } }
+    @media screen and (max-width: 1440px) {
+      main #about #about-container #about-heading img {
+        margin-left: -15%;
+        width: 30vw; } }
     main #about #about-container p {
       font-family: 'Hind Jalandhar', sans-serif;
       font-weight: normal;
