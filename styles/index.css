@@ -29,9 +29,6 @@ body {
   margin: 0;
   background-color: #000;
   overflow-x: hidden; }
-  @media screen and (max-width: 600px) {
-    body {
-      zoom: 95%; } }
 
 canvas {
   display: block;
@@ -100,7 +97,9 @@ main #intro {
         -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         padding: 3em 0 1em;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+        main #intro #branding img {
+          height: 25px; } }
   main #intro #countdown-container {
     width: 54vw;
     top: 30vh;
@@ -129,7 +128,8 @@ main #intro {
           width: 100%; }
         main #intro #countdown-container #countdown_timer table {
           display: inline-block;
-          width: unset; }
+          width: unset;
+          margin-top: -1em; }
         main #intro #countdown-container #countdown_timer tr {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -189,10 +189,10 @@ main #intro {
       margin: 0;
       padding: 0 0.3em; }
       main #intro #countdown_timer span {
-        font-size: 63px; }
+        font-size: 50px; }
         @media screen and (min-width: 425px) {
           main #intro #countdown_timer span {
-            font-size: calc(63px + 33 * ((100vw - 425px) / 1015)); } }
+            font-size: calc(50px + 46 * ((100vw - 425px) / 1015)); } }
         @media screen and (min-width: 1440px) {
           main #intro #countdown_timer span {
             font-size: 96px; } }
@@ -201,7 +201,8 @@ main #intro {
       font-size: 5em;
       color: #fff; }
       main #intro #countdown_timer th:nth-child(odd) {
-        max-width: 100px; }
+        max-width: 100px;
+        height: 100px; }
       main #intro #countdown_timer th p {
         display: none !important;
         font-size: 15px;
@@ -253,7 +254,7 @@ main #intro {
     @media screen and (max-width: 600px) {
       main #intro #scroll-msg {
         width: 95vw;
-        bottom: 1em; } }
+        bottom: -1em; } }
 
 main #about {
   display: -webkit-box;
