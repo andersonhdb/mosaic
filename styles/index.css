@@ -101,7 +101,7 @@ main #intro {
         padding: 3em 0 1em;
         margin: 0 auto; }
         main #intro #branding img {
-          height: 25px; } }
+          height: 20px; } }
   main #intro #countdown-container {
     width: 54vw;
     top: 30vh;
@@ -255,8 +255,10 @@ main #intro {
     position: absolute; }
     @media screen and (max-width: 600px) {
       main #intro #scroll-msg {
-        width: 95vw;
-        bottom: 1em; } }
+        width: 95vw; }
+      @-moz-document url-prefix() {
+        main #intro #scroll-msg {
+          bottom: -1em; } } }
 
 main #about {
   display: -webkit-box;
