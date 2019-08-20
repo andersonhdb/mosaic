@@ -64,7 +64,11 @@ main #intro {
     main #intro {
       height: 106vh;
       zoom: 90%;
-      margin: auto; } }
+      margin: auto; }
+    @-moz-document url-prefix() {
+      main #intro {
+        transform: scale(0.9);
+        margin-top: -1em; } } }
   main #intro #branding {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,7 +262,7 @@ main #intro {
         width: 95vw; }
       @-moz-document url-prefix() {
         main #intro #scroll-msg {
-          bottom: -1em; } } }
+          bottom: 1em; } } }
 
 main #about {
   display: -webkit-box;
