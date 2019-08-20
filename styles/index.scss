@@ -142,7 +142,7 @@ main {
         margin: 0 auto;
 
         img {
-          height: 25px;
+          height: 20px;
         }
       }
     }
@@ -309,7 +309,10 @@ main {
 
       @media screen and (max-width: 600px) {
         width: 95vw;
-        bottom: 1em;
+
+        @-moz-document url-prefix() {
+          bottom: -1em;
+        }
       }
     }
   }
