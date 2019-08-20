@@ -1,4 +1,4 @@
-var cur_date = new Date("November 9, 2019 00:00:01");
+var cur_date = new Date("September 2, 2019 11:00:01");
 var countDownDate = cur_date.getTime();
 
 var n = cur_date.toDateString();

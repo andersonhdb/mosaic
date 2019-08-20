@@ -317,6 +317,7 @@ main {
 
         @-moz-document url-prefix() {
           bottom: -1em;
+          position: fixed;
         }
       }
     }
