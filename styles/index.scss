@@ -109,6 +109,11 @@ main {
       height: 106vh;
       zoom: 90%;
       margin: auto;
+
+      @-moz-document url-prefix() {
+        transform: scale(0.9);
+        margin-top: -1em;
+      }
     }
 
     #branding {
@@ -311,7 +316,7 @@ main {
         width: 95vw;
 
         @-moz-document url-prefix() {
-          bottom: -1em;
+          bottom: 1em;
         }
       }
     }
