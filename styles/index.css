@@ -304,7 +304,10 @@ main #about {
       main #about #x-graphic {
         display: none; }
       main #about #about-heading img {
-        width: 74vw !important; } }
+        width: 74vw !important; }
+    @-moz-document url-prefix() {
+      main #about {
+        padding-bottom: 5em; } } }
   main #about #x-graphic {
     line-height: 0; }
     main #about #x-graphic {

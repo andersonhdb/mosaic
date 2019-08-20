@@ -362,6 +362,10 @@ main {
       #about-heading img {
         width: 74vw !important;
       }
+
+      @-moz-document url-prefix() {
+        padding-bottom: 5em;
+      }
     }
 
     #x-graphic {
