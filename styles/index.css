@@ -62,7 +62,9 @@ main #intro {
   height: 100vh; }
   @media screen and (max-width: 600px) {
     main #intro {
-      height: 106vh; } }
+      height: 106vh;
+      zoom: 90%;
+      margin: auto; } }
   main #intro #branding {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -254,7 +256,7 @@ main #intro {
     @media screen and (max-width: 600px) {
       main #intro #scroll-msg {
         width: 95vw;
-        bottom: -1em; } }
+        bottom: 4em; } }
 
 main #about {
   display: -webkit-box;
