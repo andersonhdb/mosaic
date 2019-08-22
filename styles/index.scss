@@ -49,6 +49,10 @@
 
 // RESET //
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Porter', sans-serif;
   display: flex;
@@ -56,6 +60,7 @@ body {
   margin: 0;
   background-color: #000;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 canvas {

@@ -17,6 +17,9 @@
   font-weight: normal;
   font-style: normal; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: 'Porter', sans-serif;
   display: -webkit-box;
@@ -28,7 +31,8 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #000;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 canvas {
   display: block;
