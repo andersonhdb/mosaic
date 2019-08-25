@@ -1,0 +1,20 @@
+// RESET //
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Porter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+main {
+    padding: 3em 6em;
+}

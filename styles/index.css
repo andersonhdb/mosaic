@@ -17,18 +17,6 @@
   font-weight: normal;
   font-style: normal; }
 
-body {
-  font-family: 'Porter', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0;
-  background-color: #fff; }
-
 h1 {
   font-family: 'Hind Jalandhar', sans-serif;
   font-weight: bold;
@@ -42,6 +30,27 @@ h2 {
   font-size: 25px;
   color: #fff;
   text-transform: capitalize; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Porter', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff; }
+
+main {
+  padding: 3em 6em; }
 
 nav#main-nav {
   display: -webkit-box;
@@ -58,6 +67,7 @@ nav#main-nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 2em 5em;
+  background-color: #fff;
   border-bottom: solid 2px #262626; }
   nav#main-nav #home-button {
     max-width: 135px; }
@@ -125,7 +135,12 @@ nav#main-nav {
           transition: all .5s; }
 
 nav#mobile-nav {
-  height: 50vh;
+  background-color: #fff;
+  position: fixed;
+  height: 65vh;
+  width: 100vw;
+  z-index: 100;
+  margin-top: 104px;
   padding: 1em 3em; }
   nav#mobile-nav ul#mobile-nav-items {
     display: -webkit-box;
@@ -178,3 +193,80 @@ nav#mobile-nav {
     display: none; }
   nav#mobile-nav {
     display: none !important; } }
+
+main#speakers {
+  width: 80%;
+  margin: 0 auto; }
+  main#speakers #display-buttons button {
+    border: none;
+    padding: 0.5em 1em; }
+    main#speakers #display-buttons button:not(.uk-active) {
+      opacity: 0.5; }
+  main#speakers #all-speakers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    main#speakers #all-speakers figure {
+      display: inline-block; }
+      main#speakers #all-speakers figure div {
+        width: 282px; }
+        main#speakers #all-speakers figure div p {
+          font-family: 'Hind Jalandhar', sans-serif;
+          line-height: 1.8em;
+          opacity: 0;
+          position: absolute;
+          max-width: 238px;
+          height: 382px;
+          margin: 0;
+          z-index: 100;
+          padding: 1.5em 1.5em 0;
+          background-color: #fff;
+          -webkit-transition: opacity 0.5s;
+          -o-transition: opacity 0.5s;
+          transition: opacity 0.5s; }
+          main#speakers #all-speakers figure div p {
+            font-size: 14px; }
+            @media screen and (min-width: 425px) {
+              main#speakers #all-speakers figure div p {
+                font-size: calc(14px + 4 * ((100vw - 425px) / 2135)); } }
+            @media screen and (min-width: 2560px) {
+              main#speakers #all-speakers figure div p {
+                font-size: 18px; } }
+        main#speakers #all-speakers figure div img {
+          position: relative; }
+        main#speakers #all-speakers figure div:hover p {
+          opacity: 1;
+          cursor: pointer;
+          -webkit-transition: opacity 0.2s;
+          -o-transition: opacity 0.2s;
+          transition: opacity 0.2s; }
+      main#speakers #all-speakers figure figcaption {
+        display: inline-block;
+        width: 75%;
+        padding-top: 1.5em;
+        color: #000; }
+        main#speakers #all-speakers figure figcaption {
+          font-size: 22px; }
+          @media screen and (min-width: 425px) {
+            main#speakers #all-speakers figure figcaption {
+              font-size: calc(22px + 4 * ((100vw - 425px) / 2135)); } }
+          @media screen and (min-width: 2560px) {
+            main#speakers #all-speakers figure figcaption {
+              font-size: 26px; } }
+        main#speakers #all-speakers figure figcaption span {
+          font-family: 'Hind Jalandhar', sans-serif;
+          font-weight: normal;
+          display: block; }
+          main#speakers #all-speakers figure figcaption span {
+            font-size: 16px; }
+            @media screen and (min-width: 425px) {
+              main#speakers #all-speakers figure figcaption span {
+                font-size: calc(16px + 4 * ((100vw - 425px) / 2135)); } }
+            @media screen and (min-width: 2560px) {
+              main#speakers #all-speakers figure figcaption span {
+                font-size: 20px; } }
