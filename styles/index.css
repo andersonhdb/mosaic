@@ -17,9 +17,6 @@
   font-weight: normal;
   font-style: normal; }
 
-html {
-  overflow-x: hidden; }
-
 body {
   font-family: 'Porter', sans-serif;
   display: -webkit-box;
@@ -30,22 +27,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  background-color: #000;
-  overflow-x: hidden;
-  overflow-y: hidden; }
-
-canvas {
-  display: block;
-  vertical-align: bottom; }
-
-#particles {
-  display: block;
-  width: 100%;
-  height: 100%; }
-  #particles canvas {
-    position: fixed;
-    top: 0;
-    left: 0; }
+  background-color: #fff; }
 
 h1 {
   font-family: 'Hind Jalandhar', sans-serif;
@@ -61,19 +43,31 @@ h2 {
   color: #fff;
   text-transform: capitalize; }
 
-main #intro {
-  width: 100vw;
-  height: 100vh; }
-  @media screen and (max-width: 600px) {
-    main #intro {
-      height: 106vh;
-      zoom: 90%;
-      margin: auto; }
-    @-moz-document url-prefix() {
-      main #intro {
-        transform: scale(0.9);
-        margin-top: -1em; } } }
-  main #intro #branding {
+nav#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2em 5em;
+  border-bottom: solid 2px #262626; }
+  nav#main-nav #home-button {
+    max-width: 135px; }
+    nav#main-nav #home-button img {
+      width: 100%; }
+  nav#main-nav #hamburger-menu {
+    display: none;
+    border: none;
+    font-size: xx-large; }
+  nav#main-nav ul#main-nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,76 +78,56 @@ main #intro {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 26%;
-    padding: 3em 3em 0; }
-    main #intro #branding img {
-      height: 30px; }
-    @media screen and (min-width: 992px) and (max-width: 1440px) {
-      main #intro #branding {
-        width: 30%; } }
-    @media screen and (max-width: 992px) {
-      main #intro #branding {
-        width: 50%; } }
-    @media screen and (max-width: 800px) {
-      main #intro #branding {
-        width: 60%; } }
-    @media screen and (max-width: 600px) {
-      main #intro #branding {
-        width: 85%;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
-        padding: 3em 0 1em;
-        margin: 0 auto; }
-        main #intro #branding img {
-          height: 20px; } }
-  main #intro #countdown-container {
-    width: 54vw;
-    top: 30vh;
-    left: 4vw;
-    position: relative; }
-    @media screen and (max-width: 1300px) {
-      main #intro #countdown-container {
-        width: 60vw; } }
-    @media screen and (max-width: 992px) {
-      main #intro #countdown-container {
-        width: 80vw; } }
-    @media screen and (max-width: 600px) {
-      main #intro #countdown-container {
-        width: 90vw;
-        top: 0;
-        left: 5vw;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-        main #intro #countdown-container #countdown_timer h2 {
-          text-align: center;
-          padding: 0;
-          width: 100%; }
-        main #intro #countdown-container #countdown_timer table {
-          display: inline-block;
-          width: unset;
-          margin-top: -1em; }
-        main #intro #countdown-container #countdown_timer tr {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column; }
-        main #intro #countdown-container #countdown_timer th:nth-child(even), main #intro #countdown-container #countdown_timer p {
-          display: none; }
-        main #intro #countdown-container #countdown_timer th p {
-          display: block !important;
-          line-height: 0; } }
-  main #intro #countdown_timer {
+    list-style: none;
+    padding: 0;
+    width: 540px; }
+    nav#main-nav ul#main-nav-items li {
+      display: block; }
+      nav#main-nav ul#main-nav-items li {
+        font-size: 12px; }
+        @media screen and (min-width: 425px) {
+          nav#main-nav ul#main-nav-items li {
+            font-size: calc(12px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          nav#main-nav ul#main-nav-items li {
+            font-size: 16px; } }
+      nav#main-nav ul#main-nav-items li a {
+        text-decoration: none;
+        color: #000;
+        position: relative;
+        z-index: 1;
+        padding: 15px; }
+        nav#main-nav ul#main-nav-items li a:hover {
+          color: #fff; }
+          nav#main-nav ul#main-nav-items li a:hover:after {
+            opacity: 1;
+            visibility: visible;
+            height: 100%; }
+        nav#main-nav ul#main-nav-items li a:after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+          content: '.';
+          color: transparent;
+          background: #FF0037;
+          visibility: none;
+          opacity: 0;
+          z-index: -1; }
+        nav#main-nav ul#main-nav-items li a, nav#main-nav ul#main-nav-items li a:after, nav#main-nav ul#main-nav-items li a:before {
+          -webkit-transition: all .5s;
+          -o-transition: all .5s;
+          transition: all .5s; }
+
+nav#mobile-nav {
+  height: 50vh;
+  padding: 1em 3em; }
+  nav#mobile-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -161,237 +135,18 @@ main #intro {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    main #intro #countdown_timer h2 {
-      -ms-flex-item-align: start;
-      align-self: flex-start;
-      padding-left: 1em; }
-      main #intro #countdown_timer h2 {
-        font-size: 20px; }
-        @media screen and (min-width: 425px) {
-          main #intro #countdown_timer h2 {
-            font-size: calc(20px + 5 * ((100vw - 425px) / 1015)); } }
-        @media screen and (min-width: 1440px) {
-          main #intro #countdown_timer h2 {
-            font-size: 25px; } }
-      @media screen and (max-width: 992px) {
-        main #intro #countdown_timer h2 {
-          padding-left: 0.5em; } }
-      @media screen and (max-width: 600px) {
-        main #intro #countdown_timer h2 {
-          margin-bottom: 0; } }
-    main #intro #countdown_timer img {
-      color: #fff;
-      width: 9%; }
-    main #intro #countdown_timer table {
-      width: 100%;
-      margin-left: -2em; }
-    main #intro #countdown_timer span {
-      font-family: 'Karla', sans-serif;
-      font-weight: 700;
-      text-align: center;
-      color: white;
-      margin: 0;
-      padding: 0 0.3em; }
-      main #intro #countdown_timer span {
-        font-size: 50px; }
-        @media screen and (min-width: 425px) {
-          main #intro #countdown_timer span {
-            font-size: calc(50px + 46 * ((100vw - 425px) / 1015)); } }
-        @media screen and (min-width: 1440px) {
-          main #intro #countdown_timer span {
-            font-size: 96px; } }
-    main #intro #countdown_timer th {
-      font-weight: 400;
-      font-size: 5em;
-      color: #fff; }
-      main #intro #countdown_timer th:nth-child(odd) {
-        max-width: 100px;
-        height: 100px; }
-      main #intro #countdown_timer th p {
-        display: none !important;
-        font-size: 15px;
-        text-transform: uppercase;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.5);
-        display: block; }
-    main #intro #countdown_timer p {
-      font-size: 1.3em;
-      text-transform: uppercase;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.5);
-      display: block; }
-  main #intro #clock {
-    float: right;
-    position: relative;
-    bottom: 12vw;
-    width: 45vw;
-    max-width: 535px; }
-    @media screen and (min-width: 1440px) {
-      main #intro #clock {
-        bottom: 18vw; } }
-    @media screen and (max-width: 1440px) {
-      main #intro #clock {
-        bottom: 21vw;
-        width: 35vw; } }
-    @media screen and (max-width: 992px) {
-      main #intro #clock {
-        bottom: 30vw;
-        width: 30vw; } }
-    @media screen and (max-width: 600px) {
-      main #intro #clock {
-        display: none; } }
-  main #intro #scroll-msg {
-    font-family: 'Hind Jalandhar', sans-serif;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    bottom: 0;
-    padding-bottom: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100vw;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: absolute; }
-    @media screen and (max-width: 600px) {
-      main #intro #scroll-msg {
-        width: 95vw; }
-      @-moz-document url-prefix() {
-        main #intro #scroll-msg {
-          bottom: -1em;
-          position: fixed; } } }
-
-main #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #fff;
-  background-size: auto;
-  width: 100vw;
-  height: 113vh;
-  padding-bottom: 1em; }
-  @media screen and (max-width: 992px) {
-    main #about {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 5em 0 13em; }
-      main #about #about-container {
-        width: 75vw !important; }
-      main #about #x-graphic {
-        line-height: 1em !important; }
-      main #about #about-heading img {
-        margin-left: 0 !important;
-        width: 45vw !important; } }
-  @media screen and (max-width: 600px) {
-    main #about {
-      width: 103vw;
-      padding-bottom: 0; }
-      main #about #x-graphic {
-        display: none; }
-      main #about #about-heading img {
-        width: 74vw !important; }
-    @-moz-document url-prefix() {
-      main #about {
-        padding-bottom: 5em; } } }
-  main #about #x-graphic {
-    line-height: 0; }
-    main #about #x-graphic {
-      font-size: 400px; }
-      @media screen and (min-width: 425px) {
-        main #about #x-graphic {
-          font-size: calc(400px + 450 * ((100vw - 425px) / 1015)); } }
-      @media screen and (min-width: 1440px) {
-        main #about #x-graphic {
-          font-size: 850px; } }
-  main #about #about-container {
-    width: 25vw; }
-    main #about #about-container #about-heading {
-      display: block;
-      -webkit-text-fill-color: black; }
-      main #about #about-container #about-heading img {
-        padding: 1em 0;
-        position: relative;
-        width: 40vw;
-        max-width: 575px; }
-    @media screen and (min-width: 1400px) {
-      main #about #about-container #about-heading img {
-        margin-left: -28%; } }
-    @media screen and (max-width: 1440px) {
-      main #about #about-container #about-heading img {
-        margin-left: -15%;
-        width: 30vw; } }
-    main #about #about-container p {
-      font-family: 'Hind Jalandhar', sans-serif;
-      font-weight: normal;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 50vh;
+    list-style: none;
+    padding: 0; }
+    nav#mobile-nav ul li a {
+      text-decoration: none;
       color: #000;
-      line-height: 40px; }
-      main #about #about-container p {
-        font-size: 13px; }
-        @media screen and (min-width: 425px) {
-          main #about #about-container p {
-            font-size: calc(13px + 3 * ((100vw - 425px) / 1015)); } }
-        @media screen and (min-width: 1440px) {
-          main #about #about-container p {
-            font-size: 16px; } }
-    main #about #about-container #social-media-links {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      font-family: 'Porter', sans-serif;
-      font-weight: bold;
-      padding-top: 3em; }
-      main #about #about-container #social-media-links a {
-        color: #000;
-        text-decoration: none;
-        border-bottom: solid 3px #000;
-        padding-bottom: 0.3em; }
-
-#under-construction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
-  #under-construction h1, #under-construction p {
-    text-align: center;
-    color: white; }
-  #under-construction h1 {
-    font-family: "Porter", sans-serif; }
-  #under-construction p {
-    font-family: "Hind Jalandhar", sans-serif; }
-  #under-construction #branding {
+      position: relative;
+      z-index: 1;
+      padding: 1em 2em; }
+  nav#mobile-nav #social-media-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -399,30 +154,25 @@ main #about {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%; }
-    #under-construction #branding img {
-      height: 30px; }
-      #under-construction #branding img:first-of-type {
-        padding-right: 1em; }
-  #under-construction #message {
-    width: 25vw;
-    min-width: 350px;
-    padding: 2em; }
-    #under-construction #message #social-media-links {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      font-family: 'Porter', sans-serif;
-      font-weight: bold;
-      padding-top: 1.5em; }
-      #under-construction #message #social-media-links a {
-        color: #fff;
-        text-decoration: none;
-        border-bottom: solid 3px #fff;
-        padding-bottom: 0.3em; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 200px;
+    padding-left: 2em; }
+    nav#mobile-nav #social-media-links a {
+      color: #000;
+      font-size: xx-large; }
+
+@media screen and (max-width: 992px) {
+  nav#main-nav ul#main-nav-items {
+    display: none; }
+  nav#main-nav #hamburger-menu {
+    display: block; } }
+
+@media screen and (min-width: 993px) {
+  nav#main-nav ul#main-nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  nav#main-nav #hamburger-menu {
+    display: none; } }
