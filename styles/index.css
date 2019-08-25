@@ -127,7 +127,7 @@ nav#main-nav {
 nav#mobile-nav {
   height: 50vh;
   padding: 1em 3em; }
-  nav#mobile-nav ul {
+  nav#mobile-nav ul#mobile-nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,7 +140,7 @@ nav#mobile-nav {
     height: 50vh;
     list-style: none;
     padding: 0; }
-    nav#mobile-nav ul li a {
+    nav#mobile-nav ul#mobile-nav-items li a {
       text-decoration: none;
       color: #000;
       position: relative;
@@ -175,4 +175,6 @@ nav#mobile-nav {
     display: -ms-flexbox;
     display: flex; }
   nav#main-nav #hamburger-menu {
-    display: none; } }
+    display: none; }
+  nav#mobile-nav {
+    display: none !important; } }
