@@ -9,6 +9,13 @@
 @font-face {
   font-family: 'Hind Jalandhar';
   src: url('fonts/HindJalandhar-Bold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: bolder;
+}
+
+@font-face {
+  font-family: 'Hind Jalandhar';
+  src: url('fonts/HindJalandhar-SemiBold.ttf') format('truetype');
   font-weight: bold;
   font-style: bold;
 }
