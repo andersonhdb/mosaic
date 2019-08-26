@@ -56,7 +56,7 @@ body {
   background-color: #fff; }
 
 main {
-  padding: 7vh 6vw; }
+  padding: 7em 2em 6em 0; }
 
 nav#main-nav {
   display: -webkit-box;
@@ -276,6 +276,9 @@ main#speakers {
             @media screen and (min-width: 2560px) {
               main#speakers #all-speakers figure figcaption span {
                 font-size: 20px; } }
+      main#speakers #all-speakers figure:hover figcaption {
+        cursor: pointer;
+        opacity: 0.5; }
 
 main#team {
   width: 80%;
@@ -382,3 +385,101 @@ main#team {
             @media screen and (min-width: 2560px) {
               main#team #team-members figure figcaption span {
                 font-size: 20px; } }
+
+main#homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0; }
+  main#homepage #hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  main#homepage #event-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 25%;
+    height: 100vh;
+    margin: 0;
+    padding: 3em;
+    font-family: 'Hind Jalandhar', sans-serif; }
+    main#homepage #event-details span {
+      font-weight: bold; }
+      main#homepage #event-details span {
+        font-size: 24px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details span {
+            font-size: calc(24px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details span {
+            font-size: 28px; } }
+    main#homepage #event-details h1 {
+      font-family: 'Porter', sans-serif;
+      margin: 0; }
+      main#homepage #event-details h1 {
+        font-size: 26px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details h1 {
+            font-size: calc(26px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details h1 {
+            font-size: 30px; } }
+    main#homepage #event-details h2 {
+      font-weight: bolder;
+      margin: 0; }
+      main#homepage #event-details h2 {
+        font-size: 21px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details h2 {
+            font-size: calc(21px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details h2 {
+            font-size: 25px; } }
+    main#homepage #event-details h3 {
+      font-weight: bolder;
+      margin: 0; }
+      main#homepage #event-details h3 {
+        font-size: 24px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details h3 {
+            font-size: calc(24px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details h3 {
+            font-size: 28px; } }
+    main#homepage #event-details address {
+      font-weight: bolder;
+      margin: 0; }
+      main#homepage #event-details address {
+        font-size: 24px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details address {
+            font-size: calc(24px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details address {
+            font-size: 28px; } }
+    main#homepage #event-details #ticket-purchase-button {
+      display: inline-block;
+      color: #000;
+      background-color: #fff;
+      border: solid 2px #000;
+      padding: 1.5em;
+      line-height: 0;
+      width: 276px;
+      text-decoration: none; }
+      main#homepage #event-details #ticket-purchase-button:hover {
+        background-color: #000;
+        color: #fff; }
+  main#homepage #animation {
+    width: 50%; }
