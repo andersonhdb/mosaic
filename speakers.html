@@ -33,6 +33,7 @@
   <script type="text/javascript" src="js/script.js" defer></script>
   <script src="vendor/uikit-3.1.7/js/uikit.min.js"></script>
   <script src="vendor/uikit-3.1.7/js/uikit-icons.min.js"></script>
+  <script type="text/javascript" src="js/speakers.js" defer></script>
 </head>
 
 <body>
@@ -71,6 +72,40 @@
     <ul class="uk-switcher uk-margin">
       <li>
         <section id="speaker-slideshow">
+          <div class="uk-position-relative uk-visible-toggle uk-dark" id="speaker-slideshow-container" uk-slideshow>
+            <ul class="uk-slideshow-items">
+              <li>
+                <div uk-cover>
+                  <div class="slideshow-item-container">
+                    <figure class="slideshow-content-left">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Is3hYzyQ10I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <figcaption>"A very standout quote from this cat"</figcaption>
+                    </figure>
+                    <div class="slideshow-content-right">
+                      <span>title</span>
+                      <h1>name</h1>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam tincidunt eget tellus ac fringilla. Praesent eu pellentesque quam, sed tincidunt urna.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam tincidunt eget tellus ac fringilla. Praesent eu pellentesque quam, sed tincidunt urna.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="https://placekitten.com/280/382" alt="" uk-cover>
+              </li>
+              <li>
+                  <img src="https://placekitten.com/280/382" alt="">
+              </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            <ul>
+              <li uk-slideshow-item="0"><a href="#">...</a></li>
+              <li uk-slideshow-item="1"><a href="#">...</a></li>
+              <li uk-slideshow-item="2"><a href="#">...</a></li>
+            </ul>
+          </div>
         </section>
       </li>
       <li>
