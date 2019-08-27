@@ -80,6 +80,76 @@ main#speakers {
 
   // Slideshow View //
   #speaker-slideshow {
-    
+    .uk-slideshow-items {
+      min-height: 575px !important;
+
+      li {
+        height: 100%;
+
+        div.slideshow-item-container {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 90%;
+          justify-content: space-between;
+
+          figure.slideshow-content-left {
+            width: 60%;
+            height: 100%;
+            // max-height: 450px;
+
+            iframe {
+              width: 100%;
+              height: 100%;
+            }
+
+            figcaption {
+              @include fluid-type($min_width, $max_width, 18px, 22px);
+              font-family: 'Hind Jalandhar', sans-serif;
+              font-weight: normal;
+              line-height: 4em;
+              color: #000;
+            }
+          }
+
+          .slideshow-content-right {
+            width: 35%;
+
+            span {
+              @include fluid-type($min_width, $max_width, 18px, 22px);
+              font-family: 'Hind Jalandhar', sans-serif;
+              font-weight: normal;
+              color: #000;
+            }
+
+            h1 {
+              @include fluid-type($min_width, $max_width, 26px, 30px);
+              font-family: 'Hind Jalandhar', sans-serif;
+              font-weight: bolder;
+              margin-top: 0;
+              line-height: 2.5em;
+            }
+
+            p {
+              @include fluid-type($min_width, $max_width, 14px, 18px);
+              font-family: 'Hind Jalandhar', sans-serif;
+              font-weight: normal;
+              line-height: 2.5em;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    .uk-slidenav {
+      &.uk-position-center-left {
+        left: -8em;
+      }
+
+      &.uk-position-center-right {
+        right: -9em;
+      }
+    }
   }
 }
