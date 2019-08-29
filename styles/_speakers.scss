@@ -113,7 +113,8 @@ main#speakers {
           }
 
           .slideshow-content-right {
-            width: 35%;
+            width: 32%;
+            padding-right: 2em;
 
             span {
               @include fluid-type($min_width, $max_width, 18px, 22px);
@@ -144,11 +145,32 @@ main#speakers {
 
     .uk-slidenav {
       &.uk-position-center-left {
-        left: -8em;
+        display: flex;
+        justify-content: center;
+        left: -9.5em;
+        background-color: #262626;
+        height: 114px;
+        width: 56px;
+        border-top-radius: 110px; 
+        border-top-right-radius: 110px;
+        border-bottom-right-radius: 110px;
+        position: sticky;
       }
 
       &.uk-position-center-right {
-        right: -9em;
+        display: flex;
+        justify-content: center;
+        right: -11.5em;
+        background-color: #262626;
+        height: 114px;
+        width: 56px;
+        border-top-radius: 110px; 
+        border-top-left-radius: 110px;
+        border-bottom-left-radius: 110px;
+      }
+
+      svg {
+        color: #fff;
       }
     }
   }

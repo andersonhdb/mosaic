@@ -56,7 +56,7 @@ body {
   background-color: #fff; }
 
 main {
-  padding: 7em 2em 6em 0; }
+  padding: 2em 2em 6em 0; }
 
 nav#main-nav {
   display: -webkit-box;
@@ -72,7 +72,7 @@ nav#main-nav {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 2em 5em;
+  padding: 1em 5em;
   background-color: #fff;
   border-bottom: solid 2px #262626; }
   nav#main-nav #home-button {
@@ -292,7 +292,8 @@ main#speakers {
                 main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left figcaption {
                   font-size: 22px; } }
         main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right {
-          width: 35%; }
+          width: 32%;
+          padding-right: 2em; }
           main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right span {
             font-family: 'Hind Jalandhar', sans-serif;
             font-weight: normal;
@@ -332,9 +333,37 @@ main#speakers {
                 main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right p {
                   font-size: 18px; } }
   main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-left {
-    left: -8em; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: -9.5em;
+    background-color: #262626;
+    height: 114px;
+    width: 56px;
+    border-top-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    position: -webkit-sticky;
+    position: sticky; }
   main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-right {
-    right: -9em; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    right: -11.5em;
+    background-color: #262626;
+    height: 114px;
+    width: 56px;
+    border-top-radius: 110px;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px; }
+  main#speakers #speaker-slideshow .uk-slidenav svg {
+    color: #fff; }
 
 main#team {
   width: 80%;
@@ -454,7 +483,8 @@ main#homepage {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    height: 767px; }
   main#homepage #event-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -466,11 +496,15 @@ main#homepage {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 25%;
-    height: 100vh;
+    width: 22%;
+    height: 641px;
     margin: 0;
     padding: 3em;
-    font-family: 'Hind Jalandhar', sans-serif; }
+    font-family: 'Hind Jalandhar', sans-serif;
+    color: #000; }
+    main#homepage #event-details img {
+      width: 24px;
+      padding-bottom: 0.5em; }
     main#homepage #event-details span {
       font-weight: bold; }
       main#homepage #event-details span {
@@ -526,16 +560,64 @@ main#homepage {
           main#homepage #event-details address {
             font-size: 28px; } }
     main#homepage #event-details #ticket-purchase-button {
+      font-family: 'Hind Jalandhar', sans-serif;
+      font-weight: bold;
       display: inline-block;
       color: #000;
       background-color: #fff;
       border: solid 2px #000;
-      padding: 1.5em;
-      line-height: 0;
+      padding: 0.7em;
       width: 276px;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: center;
+      -webkit-box-shadow: inset 0 0 0 0 #000;
+      box-shadow: inset 0 0 0 0 #000;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      -o-transition: ease-out 0.4s;
+      transition: ease-out 0.4s; }
+      main#homepage #event-details #ticket-purchase-button {
+        font-size: 21px; }
+        @media screen and (min-width: 425px) {
+          main#homepage #event-details #ticket-purchase-button {
+            font-size: calc(21px + 4 * ((100vw - 425px) / 2135)); } }
+        @media screen and (min-width: 2560px) {
+          main#homepage #event-details #ticket-purchase-button {
+            font-size: 25px; } }
       main#homepage #event-details #ticket-purchase-button:hover {
-        background-color: #000;
-        color: #fff; }
+        color: #fff;
+        -webkit-box-shadow: inset 350px 0 0 0 #000;
+        box-shadow: inset 350px 0 0 0 #000;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        -o-transition: ease-out 0.4s;
+        transition: ease-out 0.4s; }
+    main#homepage #event-details #social-media-links h2 {
+      padding-bottom: 0.4em; }
+    main#homepage #event-details #social-media-links a {
+      color: #000; }
+      main#homepage #event-details #social-media-links a i {
+        font-size: 34px;
+        margin-right: 0.3em; }
   main#homepage #animation {
-    width: 50%; }
+    width: 46%; }
+  main#homepage #introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 33%;
+    height: 48.1vw;
+    padding: 0em 1em 0;
+    position: absolute;
+    right: 0; }
+
+@-moz-document url-prefix() {
+  main#homepage #introduction {
+    height: 47.6vw; } }
