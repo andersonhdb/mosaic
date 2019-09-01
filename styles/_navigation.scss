@@ -6,7 +6,7 @@ nav#main-nav {
   align-items: center;
   justify-content: space-between;
   padding: 1em 5em;
-  background-color: #fff;
+  background-color: #111111;
   border-bottom: solid 2px #262626;
 
   #home-button {
@@ -37,13 +37,13 @@ nav#main-nav {
 
       a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         position:relative;
         z-index: 1;
         padding: 0.5em 0;
 
         &:hover {
-          border-bottom: solid 4px #000;
+          border-bottom: solid 4px #FF0037;
         }
       }
     }
@@ -59,7 +59,7 @@ nav#mobile-nav {
   height: 65vh;
   width: 100vw;
   z-index: 100;
-  margin-top: 104px;
+  margin-top: 72px;
   padding: 1em 3em;
   
   ul#mobile-nav-items {
@@ -97,6 +97,7 @@ nav#mobile-nav {
 
 @media screen and (max-width: 992px) {
   nav#main-nav {
+    padding: 1em 2em;
     
     ul#main-nav-items {
       display: none;

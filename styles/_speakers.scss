@@ -1,9 +1,14 @@
 // Speakers Subpage //
 main#speakers {
   width: 80%;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin: 0;
+  padding: 0;
 
   #display-buttons {
+    padding-top: 2em;
+    margin: 0 auto;
+    width: 86%;
     button {
       border: none;
       padding: 0.5em 1em;
@@ -19,6 +24,9 @@ main#speakers {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 1vw;
 
     figure {
       display: inline-block;
@@ -78,9 +86,14 @@ main#speakers {
     }
   }
 
+  .uk-switcher {
+    width: 100vw;
+  }
+
   // Slideshow View //
   #speaker-slideshow {
     .uk-slideshow-items {
+      margin-top: 2em;
       min-height: 575px !important;
 
       li {
@@ -89,9 +102,10 @@ main#speakers {
         div.slideshow-item-container {
           display: flex;
           flex-direction: row;
-          width: 100%;
+          width: 84%;
           height: 90%;
           justify-content: space-between;
+          margin: 0 auto;
 
           figure.slideshow-content-left {
             width: 60%;
@@ -119,7 +133,7 @@ main#speakers {
             span {
               @include fluid-type($min_width, $max_width, 18px, 22px);
               font-family: 'Hind Jalandhar', sans-serif;
-              font-weight: normal;
+              font-weight: 600;
               color: #000;
             }
 
@@ -139,7 +153,38 @@ main#speakers {
               color: #000;
             }
           }
+
+          @media screen and (max-width: 992px){
+            flex-direction: column;
+            
+            figure.slideshow-content-left {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              min-height: 525px;
+
+              figcaption {
+                padding-top: 1em;
+                line-height: 2em;
+              }
+            }
+            .slideshow-content-right {width: 100%;}
+          }
+
+          @media screen and (max-width: 425px) {
+            figure.slideshow-content-left {
+              min-height: 325px;
+            }
+          }
         }
+      }
+
+      @media screen and (max-width: 992px){
+        min-height: 800px !important;
+      }
+
+      @media screen and (max-width: 425px){
+        min-height: 750px !important;
       }
     }
 
@@ -147,7 +192,7 @@ main#speakers {
       &.uk-position-center-left {
         display: flex;
         justify-content: center;
-        left: -9.5em;
+        // left: -9.5vw;
         background-color: #262626;
         height: 114px;
         width: 56px;
@@ -155,18 +200,26 @@ main#speakers {
         border-top-right-radius: 110px;
         border-bottom-right-radius: 110px;
         position: sticky;
+
+        svg {
+          margin-right: 1em;
+        }
       }
 
       &.uk-position-center-right {
         display: flex;
         justify-content: center;
-        right: -11.5em;
+        // right: -13vw;
         background-color: #262626;
         height: 114px;
         width: 56px;
         border-top-radius: 110px; 
         border-top-left-radius: 110px;
         border-bottom-left-radius: 110px;
+
+        svg {
+          margin-left: 1em;
+        }
       }
 
       svg {

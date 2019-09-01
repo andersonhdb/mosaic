@@ -73,7 +73,7 @@ nav#main-nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1em 5em;
-  background-color: #fff;
+  background-color: #111111;
   border-bottom: solid 2px #262626; }
   nav#main-nav #home-button {
     max-width: 135px; }
@@ -109,12 +109,12 @@ nav#main-nav {
             font-size: 16px; } }
       nav#main-nav ul#main-nav-items li a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         position: relative;
         z-index: 1;
         padding: 0.5em 0; }
         nav#main-nav ul#main-nav-items li a:hover {
-          border-bottom: solid 4px #000; }
+          border-bottom: solid 4px #FF0037; }
 
 nav#mobile-nav {
   background-color: #fff;
@@ -122,7 +122,7 @@ nav#mobile-nav {
   height: 65vh;
   width: 100vw;
   z-index: 100;
-  margin-top: 104px;
+  margin-top: 72px;
   padding: 1em 3em; }
   nav#mobile-nav ul#mobile-nav-items {
     display: -webkit-box;
@@ -161,10 +161,12 @@ nav#mobile-nav {
       font-size: xx-large; }
 
 @media screen and (max-width: 992px) {
-  nav#main-nav ul#main-nav-items {
-    display: none; }
-  nav#main-nav #hamburger-menu {
-    display: block; } }
+  nav#main-nav {
+    padding: 1em 2em; }
+    nav#main-nav ul#main-nav-items {
+      display: none; }
+    nav#main-nav #hamburger-menu {
+      display: block; } }
 
 @media screen and (min-width: 993px) {
   nav#main-nav ul#main-nav-items {
@@ -178,12 +180,17 @@ nav#mobile-nav {
 
 main#speakers {
   width: 80%;
-  margin: 0 auto; }
-  main#speakers #display-buttons button {
-    border: none;
-    padding: 0.5em 1em; }
-    main#speakers #display-buttons button:not(.uk-active) {
-      opacity: 0.5; }
+  margin: 0;
+  padding: 0; }
+  main#speakers #display-buttons {
+    padding-top: 2em;
+    margin: 0 auto;
+    width: 86%; }
+    main#speakers #display-buttons button {
+      border: none;
+      padding: 0.5em 1em; }
+      main#speakers #display-buttons button:not(.uk-active) {
+        opacity: 0.5; }
   main#speakers #all-speakers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -192,7 +199,10 @@ main#speakers {
     flex-wrap: wrap;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
-    align-items: baseline; }
+    align-items: baseline;
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 1vw; }
     main#speakers #all-speakers figure {
       display: inline-block; }
       main#speakers #all-speakers figure div {
@@ -255,7 +265,10 @@ main#speakers {
       main#speakers #all-speakers figure:hover figcaption {
         cursor: pointer;
         opacity: 0.5; }
+  main#speakers .uk-switcher {
+    width: 100vw; }
   main#speakers #speaker-slideshow .uk-slideshow-items {
+    margin-top: 2em;
     min-height: 575px !important; }
     main#speakers #speaker-slideshow .uk-slideshow-items li {
       height: 100%; }
@@ -267,11 +280,12 @@ main#speakers {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        width: 100%;
+        width: 84%;
         height: 90%;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin: 0 auto; }
         main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left {
           width: 60%;
           height: 100%; }
@@ -296,7 +310,7 @@ main#speakers {
           padding-right: 2em; }
           main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right span {
             font-family: 'Hind Jalandhar', sans-serif;
-            font-weight: normal;
+            font-weight: 600;
             color: #000; }
             main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right span {
               font-size: 18px; }
@@ -332,6 +346,36 @@ main#speakers {
               @media screen and (min-width: 2560px) {
                 main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right p {
                   font-size: 18px; } }
+        @media screen and (max-width: 992px) {
+          main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              width: 100%;
+              min-height: 525px; }
+              main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left figcaption {
+                padding-top: 1em;
+                line-height: 2em; }
+            main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container .slideshow-content-right {
+              width: 100%; } }
+        @media screen and (max-width: 425px) {
+          main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left {
+            min-height: 325px; } }
+    @media screen and (max-width: 992px) {
+      main#speakers #speaker-slideshow .uk-slideshow-items {
+        min-height: 800px !important; } }
+    @media screen and (max-width: 425px) {
+      main#speakers #speaker-slideshow .uk-slideshow-items {
+        min-height: 750px !important; } }
   main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -339,7 +383,6 @@ main#speakers {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    left: -9.5em;
     background-color: #262626;
     height: 114px;
     width: 56px;
@@ -348,6 +391,8 @@ main#speakers {
     border-bottom-right-radius: 110px;
     position: -webkit-sticky;
     position: sticky; }
+    main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-left svg {
+      margin-right: 1em; }
   main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,13 +400,14 @@ main#speakers {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    right: -11.5em;
     background-color: #262626;
     height: 114px;
     width: 56px;
     border-top-radius: 110px;
     border-top-left-radius: 110px;
     border-bottom-left-radius: 110px; }
+    main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-right svg {
+      margin-left: 1em; }
   main#speakers #speaker-slideshow .uk-slidenav svg {
     color: #fff; }
 
@@ -496,12 +542,12 @@ main#homepage {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 22%;
-    height: 641px;
+    height: 585px;
     margin: 0;
     padding: 3em;
     font-family: 'Hind Jalandhar', sans-serif;
-    color: #000; }
+    color: #000;
+    position: fixed; }
     main#homepage #event-details img {
       width: 24px;
       padding-bottom: 0.5em; }
@@ -548,6 +594,8 @@ main#homepage {
         @media screen and (min-width: 2560px) {
           main#homepage #event-details h3 {
             font-size: 28px; } }
+    main#homepage #event-details #event-date, main#homepage #event-details #event-location {
+      width: 100%; }
     main#homepage #event-details address {
       font-weight: bolder;
       margin: 0; }
@@ -592,15 +640,19 @@ main#homepage {
         -moz-transition: ease-out 0.4s;
         -o-transition: ease-out 0.4s;
         transition: ease-out 0.4s; }
-    main#homepage #event-details #social-media-links h2 {
-      padding-bottom: 0.4em; }
-    main#homepage #event-details #social-media-links a {
-      color: #000; }
-      main#homepage #event-details #social-media-links a i {
-        font-size: 34px;
-        margin-right: 0.3em; }
+    main#homepage #event-details #social-media-links {
+      width: 100%; }
+      main#homepage #event-details #social-media-links h2 {
+        padding-bottom: 0.4em; }
+      main#homepage #event-details #social-media-links a {
+        color: #000; }
+        main#homepage #event-details #social-media-links a i {
+          font-size: 34px;
+          margin-right: 0.3em; }
   main#homepage #animation {
-    width: 46%; }
+    width: 46%;
+    padding-left: 7em;
+    margin: 0 auto; }
   main#homepage #introduction {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -613,11 +665,13 @@ main#homepage {
     -ms-flex-pack: end;
     justify-content: flex-end;
     width: 33%;
-    height: 48.1vw;
+    height: 48.9vw;
     padding: 0em 1em 0;
     position: absolute;
     right: 0; }
+    main#homepage #introduction img {
+      width: 100%; }
 
 @-moz-document url-prefix() {
   main#homepage #introduction {
-    height: 47.6vw; } }
+    height: 48.1vw; } }
