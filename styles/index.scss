@@ -12,12 +12,42 @@
 
 main#homepage {
   display: flex;
+  flex-direction: column;
   padding: 0;
+
+  .button {
+    @include fluid-type($min_width, $max_width, 19px, 25px);
+    font-family: 'Hind Jalandhar', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    border: solid 2px #000;
+    padding: 0.7em;
+    // line-height: 0;
+    width: 276px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #000;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+
+    &:hover {
+      color: #fff;
+      box-shadow: inset 350px 0 0 0 #000;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+      cursor: pointer;
+    }
+  }
 
   #hero {
     display: flex;
     flex-direction: row;
-    height: 767px;
+    // height: 767px;
+    height: 95vh;
   }
 
   #event-details {
@@ -25,9 +55,10 @@ main#homepage {
     flex-direction: column;
     justify-content: space-between;
     // width: 100%;
-    height: 585px;
+    min-height: 585px;
+    height: 70vh;
     margin: 0;
-    padding: 3em;
+    padding: 3vw;
     font-family: 'Hind Jalandhar', sans-serif;
     color: #000;
     // background-color: #fff;
@@ -39,67 +70,46 @@ main#homepage {
     }
 
     span {
-      @include fluid-type($min_width, $max_width, 24px, 28px);
+      @include fluid-type($min_width, $max_width, 18px, 28px);
       font-weight: bold;
     }
 
     h1 {
-      @include fluid-type($min_width, $max_width, 26px, 30px);
+      @include fluid-type($min_width, $max_width, 22px, 30px);
       font-family: 'Porter', sans-serif;
       margin: 0;
     }
 
     h2 {
-      @include fluid-type($min_width, $max_width, 21px, 25px);
+      @include fluid-type($min_width, $max_width, 19px, 25px);
       font-weight: bolder;
       margin: 0;
     }
 
     h3 {
-      @include fluid-type($min_width, $max_width, 24px, 28px);
+      @include fluid-type($min_width, $max_width, 18px, 28px);
       font-weight: bolder;
       margin: 0;
     }
 
-    #event-date, #event-location {
+    #event-details-heading {
+      width: 100%;
+    }
+
+    #event-date,
+    #event-location {
       width: 100%;
     }
 
     address {
-      @include fluid-type($min_width, $max_width, 24px, 28px);
+      @include fluid-type($min_width, $max_width, 18px, 28px);
       font-weight: bolder;
       margin: 0;
     }
 
-    #ticket-purchase-button {
-      @include fluid-type($min_width, $max_width, 21px, 25px);
-      font-family: 'Hind Jalandhar', sans-serif;
-      font-weight: bold;
-      display: inline-block;
-      color: #000;
-      background-color: #fff;
-      border: solid 2px #000;
-      padding: 0.7em;
-      // line-height: 0;
-      width: 276px;
-      text-decoration: none;
-      text-align: center;
-      box-shadow: inset 0 0 0 0 #000;
-      -webkit-transition: ease-out 0.4s;
-      -moz-transition: ease-out 0.4s;
-      transition: ease-out 0.4s;
-
-      &:hover {
-        color: #fff;
-        box-shadow: inset 350px 0 0 0 #000;
-        -webkit-transition: ease-out 0.4s;
-        -moz-transition: ease-out 0.4s;
-        transition: ease-out 0.4s;
-      }
-    }
-
     #social-media-links {
       width: 100%;
+
       h2 {
         padding-bottom: 0.4em;
       }
@@ -116,8 +126,9 @@ main#homepage {
   }
 
   #animation {
-    width: 46%;
-    padding-left: 7em;
+    width: 46vw;
+    // padding-left: 12vw;
+    padding-right: 3vw;
     margin: 0 auto
   }
 
@@ -125,13 +136,14 @@ main#homepage {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 33%;
+    width: 33vw;
     // top: 100px;
     height: 48.9vw;
     padding: 0em 1em 0;
     position: absolute;
     // right: 0;
-    right: 0;;
+    right: 0;
+    ;
 
     img {
       width: 100%;
@@ -142,4 +154,178 @@ main#homepage {
     }
   }
 
+  #our-speakers,
+  #past-talks,
+  #newsletter-signup {
+    // width: 69vw;
+    // padding-left: 15vw;
+    padding-top: 3em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    #our-speakers-heading,
+    #past-talks-heading,
+    #newsletter-signup-heading {
+      span {
+        @include fluid-type($min_width, $max_width, 18px, 22px);
+        font-family: 'Hind Jalandhar', sans-serif;
+        font-weight: 600;
+        color: #000;
+      }
+
+      h2 {
+        @include fluid-type($min_width, $max_width, 46px, 50px);
+        font-family: 'Porter', sans-serif;
+        font-weight: bold;
+        margin-top: 0;
+        line-height: 1.5em;
+        color: #000;
+      }
+
+      p {
+        @include fluid-type($min_width, $max_width, 14px, 18px);
+        font-family: 'Hind Jalandhar', sans-serif;
+        font-weight: normal;
+        line-height: 1em;
+        color: #000;
+      }
+    }
+
+    #past-talks-heading {
+      padding-bottom: 2em;
+    }
+
+
+    #our-speakers-items, #past-talks-items {
+      display: flex;
+      flex-direction: column;
+
+      .video-preview-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-bottom: 8em;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:nth-of-type(2) {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          figcaption {
+            margin-bottom: 3em;
+          }
+
+          .button {
+            display: block;
+            width: 80%;
+
+            &#speakers-button {
+              margin-top: -5.5em;
+            }
+
+            &#more-talks-button {
+              margin-top: -3.5em;
+            }
+          }
+        }
+      }
+
+      #featured-speaker-1,
+      #featured-speaker-4 {
+        padding-top: 7em;
+      }
+
+      #featured-speaker-2 {
+        margin-top: -3.5em;
+      }
+
+      // #featured-speaker-3 {
+
+      //   figcaption {
+      //     @include fluid-type($min_width, $max_width, 18px, 22px);
+      //     font-family: 'Hind Jalandhar', sans-serif;
+      //     font-weight: normal;
+      //     line-height: 1.5em;
+      //     color: #000;
+      //     width: 100%;
+      //   }
+      // }
+    }
+
+    figure {
+      display: inline-block;
+
+      figcaption {
+        @include fluid-type($min_width, $max_width, 22px, 26px);
+        display: inline-block;
+        width: 90%;
+        padding-top: 1.5em;
+        color: #000;
+
+        span {
+          @include fluid-type($min_width, $max_width, 16px, 20px);
+          font-family: 'Hind Jalandhar', sans-serif;
+          font-weight: normal;
+          display: block;
+        }
+      }
+
+      &:hover {
+        figcaption {
+          cursor: pointer;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  #newsletter-signup {
+    padding: 28vh 0;
+  }
+
+  #newsletter-signup-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input {
+      @include fluid-type($min_width, $max_width, 16px, 20px);
+      font-family: 'Hind Jalandhar', sans-serif;
+      font-weight: 600;
+      border: solid 2px #000;
+      padding: 0.5em 1em;
+      margin-right: 2em;
+    }
+
+    button {
+      @include fluid-type($min_width, $max_width, 16px, 20px);
+      margin-right: 4em;
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    .uk-width-2-3\@m {
+      margin-left: 2em;
+    }
+  }
+
+}
+
+// Video Modals
+
+.uk-modal-dialog {
+  iframe {
+    padding-top: 1em;
+  }
 }

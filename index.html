@@ -7,24 +7,20 @@
   <title>TEDx SFU 2019 | Mosaic</title>
   <meta name="title" content="TEDx SFU 2019 | Mosaic">
   <meta name="description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
-  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://tedxsfu.com/">
   <meta property="og:title" content="TEDx SFU 2019 | Mosaic">
   <meta property="og:description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
   <meta property="og:image" content="http://tedxsfu.com/images/mosaic_metadata_cover.png">
-  
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://tedxsfu.com/">
   <meta property="twitter:title" content="TEDx SFU 2019 | Mosaic">
   <meta property="twitter:description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
   <meta property="twitter:image" content="http://tedxsfu.com/images/mosaic_metadata_cover.png">
-
   <!-- Google Search Console Ownership -->
   <meta name="google-site-verification" content="kl-_xpoNmUR_cZO143KBREBPZfu_ajGs2ORWjiiRua8" />
-
   <!-- Styles & Javascript -->
   <link rel="stylesheet" type="text/css" href="styles/index.css">
   <link rel="stylesheet" href="vendor/uikit-3.1.7/css/uikit.min.css" />
@@ -33,6 +29,9 @@
   <script type="text/javascript" src="js/script.js" defer></script>
   <script src="vendor/uikit-3.1.7/js/uikit.min.js"></script>
   <script src="vendor/uikit-3.1.7/js/uikit-icons.min.js"></script>
+  <script src="https://bundle.run/formdata-polyfill@3.0.19"></script>
+  <script src="https://bundle.run/promise-polyfill@8.1.3"></script>
+  <script src="https://bundle.run/whatwg-fetch@3.0.0"></script>
 </head>
 
 <body>
@@ -40,7 +39,7 @@
     <a href="/index.html" id="home-button"><img src="/images/tedx-logo.png" alt="TEDx SFU logo"></a>
     <ul id="main-nav-items">
       <li><a href="/speakers.html">Speakers</a></li>
-      <li><a href="/tickets.html">Tickets</a></li>
+      <li><a href="https://www.eventbrite.com/e/tedxsfu-mosaic-tickets-70857987147?ref=elink" target="_blank">Tickets</a></li>
       <li><a href="/partners.html">Partners</a></li>
       <li><a href="/team.html">Team</a></li>
       <li><a href="/team.html">About</a></li>
@@ -50,10 +49,10 @@
   <nav id="mobile-nav">
     <ul id="mobile-nav-items">
       <li><a href="/speakers.html">Speakers</a></li>
-      <li><a href="/tickets.html">Tickets</a></li>
+      <li><a href="https://www.eventbrite.com/e/tedxsfu-mosaic-tickets-70857987147?ref=elink" target="_blank">Tickets</a></li>
       <li><a href="/partners.html">Partners</a></li>
       <li><a href="/team.html">Team</a></li>
-      <li><a href="/team.html">About</a></li>
+      <li><a href="/about.html">About</a></li>
     </ul>
     <div id="social-media-links">
       <a href="https://www.instagram.com/tedxsfu/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -61,7 +60,6 @@
       <a href="https://twitter.com/tedxsfu?lang=en" target="_blank" id="twitter"><i class="fab fa-twitter-square"></i></a>
     </div>
   </nav>
-
   <main id="homepage">
     <section id="hero">
       <div id="event-details" class="uk-child-width-1-4@m">
@@ -71,19 +69,19 @@
           <h2>Event Details</h2>
         </div>
         <div id="event-date">
-          <img src="images/clock.svg" alt="Clock Icon"/>
+          <img src="images/clock.svg" alt="Clock Icon" />
           <h2>November 9</h2>
           <h3>9:00 AM - 5:00 PM</h3>
         </div>
         <div id="event-location">
-          <img src="images/map.svg" alt="Map Icon"/>
+          <img src="images/map.svg" alt="Map Icon" />
           <address>
             Granville Island Stage
             <br>
             1585 Johnston St, Vancouver BC
           </address>
         </div>
-        <a href="/tickets.html" id="ticket-purchase-button">Purchase a ticket</a>
+        <a href="https://www.eventbrite.com/e/tedxsfu-mosaic-tickets-70857987147?ref=elink" id="ticket-purchase-button" target="_blank" class="button">Purchase a ticket</a>
         <div id="social-media-links">
           <h2>Join our network</h2>
           <a href="https://www.instagram.com/tedxsfu/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -92,13 +90,146 @@
         </div>
       </div>
       <div id="animation" class="uk-child-width-2-4@m">
-        <img src="/images/animation-placeholder.png"/>
+        <!-- <img src="/images/animation-placeholder.png" /> -->
+        <video src="/images/anim.mp4" muted playsinline uk-video="autoplay: inview"></video>
       </div>
       <div id="introduction" class="uk-child-width-1-4@m">
-        <img src="/images/theme.svg" alt="Theme of this Year is Mosaic"/>
+        <img src="/images/theme.svg" alt="Theme of this Year is Mosaic" />
+      </div>
+    </section>
+    <section id="our-speakers" class="uk-width-expand">
+      <div class="uk-width-1-3@m"></div>
+      <div class="uk-width-2-3@m">
+        <div id="our-speakers-heading">
+          <span>The Year of 2019</span>
+          <h2>Our Speakers</h2>
+        </div>
+        <div id="our-speakers-items">
+          <div class="row">
+            <a href="speakers.html" id="featured-speaker-1" class="uk-width-1-3">
+              <figure>
+                <img src="/images/speakers/andrew-bird.png" />
+                <figcaption><span>Motivational Speaker</span>Andrew Bird</figcaption>
+              </figure>
+            </a>
+            <a href="speakers.html" id="featured-speaker-2" class="uk-width-1-3">
+              <figure>
+                <img src="/images/speakers/ashley-mcgirt.png" />
+                <figcaption><span>Racial Trauma Specialist & International Speaker</span>Ashley McGirt</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="row" uk-grid>
+            <div class="uk-width-1-3">
+              <a href="/speakers.html" id="speakers-button" class="button">Meet all speakers</a>
+            </div>
+            <div class="uk-width-2-3">
+              <a href="speakers.html" id="featured-speaker-3">
+                <figure>
+                  <img src="/images/thumbnails/bal-pawa.png" alt="Bal Pawa video thumbnail" />
+                  <figcaption><span>Co-founder of Westcoast Women's Clinic</span>Dr. Bal Pawa</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <a href="speakers.html" id="featured-speaker-4" class="uk-width-1-3">
+              <figure>
+                <img src="/images/speakers/rose-anza-burgess.png" />
+                <figcaption><span>Emerging Academic, Interdisciplinary Writer & Artist</span>Rose Anza-Burgess</figcaption>
+              </figure>
+            </a>
+            <a href="speakers.html" id="featured-speaker-5" class="uk-width-1-3">
+              <figure>
+                <img src="/images/speakers/natasha-jung.png" />
+                <figcaption><span>Co-Founder and Executive Producer of Cold Tea Collective</span>Natasha Jung</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="past-talks" class="uk-width-expand">
+      <div class="uk-width-1-3@m"></div>
+      <div class="uk-width-2-3@m">
+        <div id="past-talks-heading">
+          <span>Legacy Archive</span>
+          <h2>Past Featured Talks</h2>
+        </div>
+        <div id="past-talks-items">
+          <div class="row">
+            <div class="uk-width-2-3">
+              <button type="button" uk-toggle="target: #dan-lok" class="video-preview-button">
+                <img src="/images/thumbnails/dan-lok.png" alt="Dan Lok video thumbnail" />
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="uk-width-1-3">
+              <a href="https://www.youtube.com/user/TEDxTalks/search?query=tedxsfu" target="_blank" id="more-talks-button" class="button">View more content</a>
+            </div>
+            <div class="uk-width-2-3">
+              <button type="button" uk-toggle="target: #mark-groves" class="video-preview-button">
+                <img src="/images/thumbnails/mark-groves.png" alt="Mark Groves video thumbnail" />
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="uk-width-2-3">
+              <button type="button" uk-toggle="target: #tamara-taggart" class="video-preview-button">
+                <img src="/images/thumbnails/tamara-taggart.png" alt="Tamara Taggart video thumbnail" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter-signup" class="uk-width-expand">
+      <div class="uk-width-1-3@m"></div>
+      <div class="uk-width-2-3@m">
+        <div id="newsletter-signup-heading">
+          <span>Get more updates</span>
+          <h2>Sign Up</h2>
+          <p>Be the first to find out about promotions and opportunitites.</p> 
+          <p>You may unsubcribe at any time.</p>
+        </div>
+        <form name="submit-to-google-sheet" id="newsletter-signup-form">
+          <input name="email" type="email" placeholder="Your email" class="uk-width-3-4@m" required>
+          <button type="submit" class="button uk-width-1-4@m">Subscribe</button>
+        </form>
       </div>
     </section>
   </main>
+  <div id="dan-lok" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <iframe src="https://www.youtube-nocookie.com/embed/qvNyo1-AK6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+    </div>
+  </div>
+  <div id="mark-groves" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <iframe src="https://www.youtube-nocookie.com/embed/YGoI3B86iX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+    </div>
+  </div>
+  <div id="tamara-taggart" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <iframe src="https://www.youtube-nocookie.com/embed/vjRlFCgQ1e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+    </div>
+  </div>
+
+  <script type="text/javascript" defer>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
