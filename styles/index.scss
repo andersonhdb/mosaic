@@ -7,6 +7,7 @@
 // Subpages //
 @import 'speakers';
 @import 'team';
+@import 'about';
 
 // Main Content //
 
@@ -24,7 +25,6 @@ main#homepage {
     background-color: #fff;
     border: solid 2px #000;
     padding: 0.7em;
-    // line-height: 0;
     width: 276px;
     text-decoration: none;
     text-align: center;
@@ -46,7 +46,6 @@ main#homepage {
   #hero {
     display: flex;
     flex-direction: row;
-    // height: 767px;
     height: 95vh;
   }
 
@@ -54,14 +53,12 @@ main#homepage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 100%;
     min-height: 585px;
     height: 70vh;
     margin: 0;
     padding: 3vw;
     font-family: 'Hind Jalandhar', sans-serif;
     color: #000;
-    // background-color: #fff;
     position: fixed;
 
     img {
@@ -127,7 +124,6 @@ main#homepage {
 
   #animation {
     width: 46vw;
-    // padding-left: 12vw;
     padding-right: 3vw;
     margin: 0 auto
   }
@@ -137,11 +133,9 @@ main#homepage {
     flex-direction: column;
     justify-content: flex-end;
     width: 33vw;
-    // top: 100px;
     height: 48.9vw;
     padding: 0em 1em 0;
     position: absolute;
-    // right: 0;
     right: 0;
     ;
 
@@ -157,8 +151,6 @@ main#homepage {
   #our-speakers,
   #past-talks,
   #newsletter-signup {
-    // width: 69vw;
-    // padding-left: 15vw;
     padding-top: 3em;
     margin: 0 auto;
     display: flex;
@@ -252,7 +244,6 @@ main#homepage {
       }
 
       // #featured-speaker-3 {
-
       //   figcaption {
       //     @include fluid-type($min_width, $max_width, 18px, 22px);
       //     font-family: 'Hind Jalandhar', sans-serif;

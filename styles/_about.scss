@@ -1,0 +1,46 @@
+// Team and Partners Subpage //
+main#about {
+  // width: 100%;
+  // height: 100vh;
+  // margin: 0 auto;
+  padding: 4vw 8vw;
+  background-color: #000;
+
+  h1 {
+    @include fluid-type($min_width, $max_width, 30px, 35px);
+    font-family: 'Porter', sans-serif;
+    color: #fff;
+  }
+
+  p {
+    @include fluid-type($min_width, $max_width, 18px, 22px);
+    font-family: 'Hind Jalandhar', sans-serif;
+    font-weight: normal;
+    width: 75%;
+    color: #fff;
+    line-height: 2em;
+  }
+
+  #about-items {
+    padding: 2em 0 8em;
+    
+    .video-preview-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-top: 2em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Video Modals
+
+.uk-modal-dialog {
+  iframe {
+    padding-top: 1em;
+  }
+}

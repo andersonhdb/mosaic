@@ -1,14 +1,16 @@
 // Speakers Subpage //
 main#speakers {
-  width: 80%;
+  width: 100%;
   // margin: 0 auto;
   margin: 0;
   padding: 0;
+  background-color: #000;
 
   #display-buttons {
     padding-top: 2em;
     margin: 0 auto;
     width: 86%;
+
     button {
       border: none;
       padding: 0.5em 1em;
@@ -40,12 +42,13 @@ main#speakers {
           line-height: 1.8em;
           opacity: 0;
           position: absolute;
-          max-width: 238px;
+          max-width: 240px;
           height: 382px;
           margin: 0;
           z-index: 100;
           padding: 1.5em 1.5em 0;
-          background-color: #fff;
+          background-color: #000;
+          color: #fff;
           transition: opacity 0.5s;
         }
 
@@ -65,15 +68,17 @@ main#speakers {
       figcaption {
         @include fluid-type($min_width, $max_width, 22px, 26px);
         display: inline-block;
-        width: 75%;
-        padding-top: 1.5em;
-        color: #000;
+        width: 90%;
+        padding-top: 1em;
+        color: #fff;
 
         span {
           @include fluid-type($min_width, $max_width, 16px, 20px);
           font-family: 'Hind Jalandhar', sans-serif;
           font-weight: normal;
           display: block;
+          padding-top: 0.5em;
+          color: #fff;
         }
       }
 
@@ -112,9 +117,9 @@ main#speakers {
             height: 100%;
             // max-height: 450px;
 
-            iframe {
+            iframe, img {
               width: 100%;
-              height: 100%;
+              // height: 100%;
             }
 
             figcaption {
@@ -122,7 +127,8 @@ main#speakers {
               font-family: 'Hind Jalandhar', sans-serif;
               font-weight: normal;
               line-height: 4em;
-              color: #000;
+              color: #fff;
+              display: none; //uncomment when quote is ready
             }
           }
 
@@ -131,26 +137,48 @@ main#speakers {
             padding-right: 2em;
 
             span {
-              @include fluid-type($min_width, $max_width, 18px, 22px);
+              @include fluid-type($min_width, $max_width, 16px, 20px);
               font-family: 'Hind Jalandhar', sans-serif;
               font-weight: 600;
-              color: #000;
+              color: #fff;
             }
 
             h1 {
               @include fluid-type($min_width, $max_width, 26px, 30px);
               font-family: 'Hind Jalandhar', sans-serif;
               font-weight: bolder;
-              margin-top: 0;
-              line-height: 2.5em;
+              margin-top: 0.8em;
+              color: #fff;
             }
 
-            p {
-              @include fluid-type($min_width, $max_width, 14px, 18px);
-              font-family: 'Hind Jalandhar', sans-serif;
-              font-weight: normal;
-              line-height: 2.5em;
-              color: #000;
+            #social-media-links {
+              width: 100%;
+              padding-bottom: 1em;
+
+              a {
+                color: #fff;
+
+                i {
+                  font-size: 34px;
+                  margin-right: 0.3em;
+                }
+              }
+            }
+            
+            .scrollable {
+              border: none;
+              overflow-y: scroll;
+              height: 50%;
+              scrollbar-thumb-color: dark; 
+              -webkit-scrollbar-thumb-color: #fff; 
+
+              p {
+                @include fluid-type($min_width, $max_width, 14px, 18px);
+                font-family: 'Hind Jalandhar', sans-serif;
+                font-weight: normal;
+                line-height: 2.5em;
+                color: #fff;
+              }
             }
           }
 
@@ -161,7 +189,8 @@ main#speakers {
               display: flex;
               flex-direction: column;
               width: 100%;
-              min-height: 525px;
+              // min-height: 525px; //uncomment when video is ready
+              min-height: 300px;
 
               figcaption {
                 padding-top: 1em;
@@ -224,6 +253,10 @@ main#speakers {
 
       svg {
         color: #fff;
+      }
+
+      @media screen and (max-width: 500px) {
+        &.uk-position-center-left, &.uk-position-center-right{margin-top: -35vh;}
       }
     }
   }
