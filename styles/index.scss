@@ -35,7 +35,7 @@ main#homepage {
 
     &:hover {
       color: #fff;
-      box-shadow: inset 350px 0 0 0 #000;
+      box-shadow: inset 420px 0 0 0 #000;
       -webkit-transition: ease-out 0.4s;
       -moz-transition: ease-out 0.4s;
       transition: ease-out 0.4s;
@@ -47,6 +47,10 @@ main#homepage {
     display: flex;
     flex-direction: row;
     height: 95vh;
+  }
+
+  #mobile-event-details {
+    display: none;
   }
 
   #event-details {
@@ -160,14 +164,14 @@ main#homepage {
     #past-talks-heading,
     #newsletter-signup-heading {
       span {
-        @include fluid-type($min_width, $max_width, 18px, 22px);
+        @include fluid-type($min_width, $max_width, 10px, 22px);
         font-family: 'Hind Jalandhar', sans-serif;
         font-weight: 600;
         color: #000;
       }
 
       h2 {
-        @include fluid-type($min_width, $max_width, 46px, 50px);
+        @include fluid-type($min_width, $max_width, 16px, 50px);
         font-family: 'Porter', sans-serif;
         font-weight: bold;
         margin-top: 0;
@@ -189,7 +193,8 @@ main#homepage {
     }
 
 
-    #our-speakers-items, #past-talks-items {
+    #our-speakers-items,
+    #past-talks-items {
       display: flex;
       flex-direction: column;
 
@@ -242,34 +247,24 @@ main#homepage {
       #featured-speaker-2 {
         margin-top: -3.5em;
       }
-
-      // #featured-speaker-3 {
-      //   figcaption {
-      //     @include fluid-type($min_width, $max_width, 18px, 22px);
-      //     font-family: 'Hind Jalandhar', sans-serif;
-      //     font-weight: normal;
-      //     line-height: 1.5em;
-      //     color: #000;
-      //     width: 100%;
-      //   }
-      // }
     }
 
     figure {
       display: inline-block;
 
       figcaption {
-        @include fluid-type($min_width, $max_width, 22px, 26px);
+        @include fluid-type($min_width, $max_width, 13px, 20px);
         display: inline-block;
         width: 90%;
-        padding-top: 1.5em;
+        padding-top: 1em;
         color: #000;
 
         span {
-          @include fluid-type($min_width, $max_width, 16px, 20px);
+          @include fluid-type($min_width, $max_width, 12px, 18px);
           font-family: 'Hind Jalandhar', sans-serif;
           font-weight: normal;
           display: block;
+          padding-top: 0.4em;
         }
       }
 
@@ -284,12 +279,17 @@ main#homepage {
 
   #newsletter-signup {
     padding: 28vh 0;
+
+    p {
+      line-height: 20px;
+    }
   }
 
   #newsletter-signup-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     input {
       @include fluid-type($min_width, $max_width, 16px, 20px);
       font-family: 'Hind Jalandhar', sans-serif;
@@ -305,12 +305,194 @@ main#homepage {
     }
   }
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     .uk-width-2-3\@m {
       margin-left: 2em;
     }
   }
 
+  @media screen and (max-width: 500px) {
+
+    section {
+      width: 84vw;
+      margin: 0 auto;
+    }
+
+    #hero #event-details,
+    .uk-width-expand .block {
+      display: none;
+    }
+
+    #hero {
+      height: 75vh;
+      flex-direction: column;
+
+      #animation {
+        // margin: 0;
+        width: 80vw;
+        padding: 2em 0 0;
+      }
+
+      #introduction {
+        height: 90vw;
+      }
+
+      #mobile-event-details {
+        display: block;
+        font-family: 'Hind Jalandhar', sans-serif;
+        font-weight: 600;
+        color: #000;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 5vh;
+
+        .button {
+          width: 92%;
+          margin: 1em 0;
+        }
+
+        #mobile-event-details-container {
+          display: flex;
+          flex-direction: row;
+
+          h2 {
+            padding-top: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+          }
+
+          h3 {
+            font-size: 13px;
+            line-height: 22px;
+            font-weight: bold;
+            margin: 0;
+          }
+
+          address {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    #our-speakers {
+      margin-top: 20vh;
+
+      .uk-width-2-3\@m {
+        margin-left: auto;
+
+        #featured-speaker-3 figure {
+          width: 84vw;
+        }
+      }
+
+      .row {
+        justify-content: space-between !important;
+        width: 105%;
+
+        &:nth-of-type(2) {
+          display: flex;
+          flex-direction: column;
+          padding-top: 1.5em;
+          order: 3;
+
+          #speakers-button-container {
+            padding-top: 10vh;
+            order: 2;
+
+            .button {
+              width: 95%;
+            }
+          }
+        }
+      }
+
+      figure figcaption {
+        width: 100%;
+      }
+
+      #featured-speaker-1,
+      #featured-speaker-2,
+      #featured-speaker-4,
+      #featured-speaker-5 {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    #past-talks {
+      .uk-width-2-3\@m {
+        margin-left: auto;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      #past-talks-items {
+        .row {
+
+          button {
+            margin-bottom: 2em;
+          }
+
+          &:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            order: 3;
+
+            #more-talks-button-container {
+              order: 2;
+
+              #more-talks-button {
+                margin-top: 2em;
+                width: 91%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #newsletter-signup {
+      padding: 15vh 0 !important;
+
+      .uk-width-2-3\@m {
+        margin-left: auto;
+      }
+
+      #newsletter-signup-form {
+        flex-direction: column;
+
+        .button {
+          margin-top: 1em;
+          width: 100%;
+        }
+      }
+
+      #social-media-links {
+        width: 100%;
+        padding-top: 2em;
+
+        h2 {
+          @include fluid-type($min_width, $max_width, 19px, 25px);
+          font-weight: bolder;
+          margin: 0;
+          padding-bottom: 0.4em;
+        }
+
+        a {
+          color: #000;
+
+          i {
+            font-size: 34px;
+            margin-right: 0.3em;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Video Modals

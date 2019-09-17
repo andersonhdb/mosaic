@@ -619,8 +619,8 @@ main#homepage {
           font-size: 25px; } }
     main#homepage .button:hover {
       color: #fff;
-      -webkit-box-shadow: inset 350px 0 0 0 #000;
-      box-shadow: inset 350px 0 0 0 #000;
+      -webkit-box-shadow: inset 420px 0 0 0 #000;
+      box-shadow: inset 420px 0 0 0 #000;
       -webkit-transition: ease-out 0.4s;
       -moz-transition: ease-out 0.4s;
       -o-transition: ease-out 0.4s;
@@ -635,6 +635,8 @@ main#homepage {
     -ms-flex-direction: row;
     flex-direction: row;
     height: 95vh; }
+  main#homepage #mobile-event-details {
+    display: none; }
   main#homepage #event-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,7 +785,7 @@ main#homepage {
       main#homepage #newsletter-signup #our-speakers-heading span,
       main#homepage #newsletter-signup #past-talks-heading span,
       main#homepage #newsletter-signup #newsletter-signup-heading span {
-        font-size: 18px; }
+        font-size: 10px; }
         @media screen and (min-width: 425px) {
           main#homepage #our-speakers #our-speakers-heading span,
           main#homepage #our-speakers #past-talks-heading span,
@@ -794,7 +796,7 @@ main#homepage {
           main#homepage #newsletter-signup #our-speakers-heading span,
           main#homepage #newsletter-signup #past-talks-heading span,
           main#homepage #newsletter-signup #newsletter-signup-heading span {
-            font-size: calc(18px + 4 * ((100vw - 425px) / 2135)); } }
+            font-size: calc(10px + 12 * ((100vw - 425px) / 2135)); } }
         @media screen and (min-width: 2560px) {
           main#homepage #our-speakers #our-speakers-heading span,
           main#homepage #our-speakers #past-talks-heading span,
@@ -829,7 +831,7 @@ main#homepage {
       main#homepage #newsletter-signup #our-speakers-heading h2,
       main#homepage #newsletter-signup #past-talks-heading h2,
       main#homepage #newsletter-signup #newsletter-signup-heading h2 {
-        font-size: 46px; }
+        font-size: 16px; }
         @media screen and (min-width: 425px) {
           main#homepage #our-speakers #our-speakers-heading h2,
           main#homepage #our-speakers #past-talks-heading h2,
@@ -840,7 +842,7 @@ main#homepage {
           main#homepage #newsletter-signup #our-speakers-heading h2,
           main#homepage #newsletter-signup #past-talks-heading h2,
           main#homepage #newsletter-signup #newsletter-signup-heading h2 {
-            font-size: calc(46px + 4 * ((100vw - 425px) / 2135)); } }
+            font-size: calc(16px + 34 * ((100vw - 425px) / 2135)); } }
         @media screen and (min-width: 2560px) {
           main#homepage #our-speakers #our-speakers-heading h2,
           main#homepage #our-speakers #past-talks-heading h2,
@@ -901,7 +903,8 @@ main#homepage {
     main#homepage #past-talks #past-talks-heading,
     main#homepage #newsletter-signup #past-talks-heading {
       padding-bottom: 2em; }
-    main#homepage #our-speakers #our-speakers-items, main#homepage #our-speakers #past-talks-items,
+    main#homepage #our-speakers #our-speakers-items,
+    main#homepage #our-speakers #past-talks-items,
     main#homepage #past-talks #our-speakers-items,
     main#homepage #past-talks #past-talks-items,
     main#homepage #newsletter-signup #our-speakers-items,
@@ -913,7 +916,8 @@ main#homepage {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      main#homepage #our-speakers #our-speakers-items .video-preview-button, main#homepage #our-speakers #past-talks-items .video-preview-button,
+      main#homepage #our-speakers #our-speakers-items .video-preview-button,
+      main#homepage #our-speakers #past-talks-items .video-preview-button,
       main#homepage #past-talks #our-speakers-items .video-preview-button,
       main#homepage #past-talks #past-talks-items .video-preview-button,
       main#homepage #newsletter-signup #our-speakers-items .video-preview-button,
@@ -922,13 +926,15 @@ main#homepage {
         border: none;
         padding: 0;
         margin-bottom: 8em; }
-        main#homepage #our-speakers #our-speakers-items .video-preview-button:hover, main#homepage #our-speakers #past-talks-items .video-preview-button:hover,
+        main#homepage #our-speakers #our-speakers-items .video-preview-button:hover,
+        main#homepage #our-speakers #past-talks-items .video-preview-button:hover,
         main#homepage #past-talks #our-speakers-items .video-preview-button:hover,
         main#homepage #past-talks #past-talks-items .video-preview-button:hover,
         main#homepage #newsletter-signup #our-speakers-items .video-preview-button:hover,
         main#homepage #newsletter-signup #past-talks-items .video-preview-button:hover {
           cursor: pointer; }
-      main#homepage #our-speakers #our-speakers-items .row, main#homepage #our-speakers #past-talks-items .row,
+      main#homepage #our-speakers #our-speakers-items .row,
+      main#homepage #our-speakers #past-talks-items .row,
       main#homepage #past-talks #our-speakers-items .row,
       main#homepage #past-talks #past-talks-items .row,
       main#homepage #newsletter-signup #our-speakers-items .row,
@@ -943,7 +949,8 @@ main#homepage {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between; }
-        main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2), main#homepage #our-speakers #past-talks-items .row:nth-of-type(2),
+        main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2),
+        main#homepage #our-speakers #past-talks-items .row:nth-of-type(2),
         main#homepage #past-talks #our-speakers-items .row:nth-of-type(2),
         main#homepage #past-talks #past-talks-items .row:nth-of-type(2),
         main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2),
@@ -961,33 +968,38 @@ main#homepage {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
-          main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) figcaption, main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) figcaption,
+          main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) figcaption,
+          main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) figcaption,
           main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) figcaption,
           main#homepage #past-talks #past-talks-items .row:nth-of-type(2) figcaption,
           main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) figcaption,
           main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) figcaption {
             margin-bottom: 3em; }
-          main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button, main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button,
+          main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button,
+          main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button,
           main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button,
           main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button,
           main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button,
           main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button {
             display: block;
             width: 80%; }
-            main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#speakers-button, main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#speakers-button,
+            main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
+            main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#speakers-button,
             main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
             main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button#speakers-button,
             main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
             main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button#speakers-button {
               margin-top: -5.5em; }
-            main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#more-talks-button, main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
+            main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
+            main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
             main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
             main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
             main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
             main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button#more-talks-button {
               margin-top: -3.5em; }
       main#homepage #our-speakers #our-speakers-items #featured-speaker-1,
-      main#homepage #our-speakers #our-speakers-items #featured-speaker-4, main#homepage #our-speakers #past-talks-items #featured-speaker-1,
+      main#homepage #our-speakers #our-speakers-items #featured-speaker-4,
+      main#homepage #our-speakers #past-talks-items #featured-speaker-1,
       main#homepage #our-speakers #past-talks-items #featured-speaker-4,
       main#homepage #past-talks #our-speakers-items #featured-speaker-1,
       main#homepage #past-talks #our-speakers-items #featured-speaker-4,
@@ -998,7 +1010,8 @@ main#homepage {
       main#homepage #newsletter-signup #past-talks-items #featured-speaker-1,
       main#homepage #newsletter-signup #past-talks-items #featured-speaker-4 {
         padding-top: 7em; }
-      main#homepage #our-speakers #our-speakers-items #featured-speaker-2, main#homepage #our-speakers #past-talks-items #featured-speaker-2,
+      main#homepage #our-speakers #our-speakers-items #featured-speaker-2,
+      main#homepage #our-speakers #past-talks-items #featured-speaker-2,
       main#homepage #past-talks #our-speakers-items #featured-speaker-2,
       main#homepage #past-talks #past-talks-items #featured-speaker-2,
       main#homepage #newsletter-signup #our-speakers-items #featured-speaker-2,
@@ -1013,42 +1026,43 @@ main#homepage {
       main#homepage #newsletter-signup figure figcaption {
         display: inline-block;
         width: 90%;
-        padding-top: 1.5em;
+        padding-top: 1em;
         color: #000; }
         main#homepage #our-speakers figure figcaption,
         main#homepage #past-talks figure figcaption,
         main#homepage #newsletter-signup figure figcaption {
-          font-size: 22px; }
+          font-size: 13px; }
           @media screen and (min-width: 425px) {
             main#homepage #our-speakers figure figcaption,
             main#homepage #past-talks figure figcaption,
             main#homepage #newsletter-signup figure figcaption {
-              font-size: calc(22px + 4 * ((100vw - 425px) / 2135)); } }
+              font-size: calc(13px + 7 * ((100vw - 425px) / 2135)); } }
           @media screen and (min-width: 2560px) {
             main#homepage #our-speakers figure figcaption,
             main#homepage #past-talks figure figcaption,
             main#homepage #newsletter-signup figure figcaption {
-              font-size: 26px; } }
+              font-size: 20px; } }
         main#homepage #our-speakers figure figcaption span,
         main#homepage #past-talks figure figcaption span,
         main#homepage #newsletter-signup figure figcaption span {
           font-family: 'Hind Jalandhar', sans-serif;
           font-weight: normal;
-          display: block; }
+          display: block;
+          padding-top: 0.4em; }
           main#homepage #our-speakers figure figcaption span,
           main#homepage #past-talks figure figcaption span,
           main#homepage #newsletter-signup figure figcaption span {
-            font-size: 16px; }
+            font-size: 12px; }
             @media screen and (min-width: 425px) {
               main#homepage #our-speakers figure figcaption span,
               main#homepage #past-talks figure figcaption span,
               main#homepage #newsletter-signup figure figcaption span {
-                font-size: calc(16px + 4 * ((100vw - 425px) / 2135)); } }
+                font-size: calc(12px + 6 * ((100vw - 425px) / 2135)); } }
             @media screen and (min-width: 2560px) {
               main#homepage #our-speakers figure figcaption span,
               main#homepage #past-talks figure figcaption span,
               main#homepage #newsletter-signup figure figcaption span {
-                font-size: 20px; } }
+                font-size: 18px; } }
       main#homepage #our-speakers figure:hover figcaption,
       main#homepage #past-talks figure:hover figcaption,
       main#homepage #newsletter-signup figure:hover figcaption {
@@ -1056,6 +1070,8 @@ main#homepage {
         opacity: 0.5; }
   main#homepage #newsletter-signup {
     padding: 28vh 0; }
+    main#homepage #newsletter-signup p {
+      line-height: 20px; }
   main#homepage #newsletter-signup-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1094,6 +1110,150 @@ main#homepage {
   @media screen and (max-width: 1024px) {
     main#homepage .uk-width-2-3\@m {
       margin-left: 2em; } }
+  @media screen and (max-width: 500px) {
+    main#homepage section {
+      width: 84vw;
+      margin: 0 auto; }
+    main#homepage #hero #event-details,
+    main#homepage .uk-width-expand .block {
+      display: none; }
+    main#homepage #hero {
+      height: 75vh;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      main#homepage #hero #animation {
+        width: 80vw;
+        padding: 2em 0 0; }
+      main#homepage #hero #introduction {
+        height: 90vw; }
+      main#homepage #hero #mobile-event-details {
+        display: block;
+        font-family: 'Hind Jalandhar', sans-serif;
+        font-weight: 600;
+        color: #000;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 5vh; }
+        main#homepage #hero #mobile-event-details .button {
+          width: 92%;
+          margin: 1em 0; }
+        main#homepage #hero #mobile-event-details #mobile-event-details-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          main#homepage #hero #mobile-event-details #mobile-event-details-container h2 {
+            padding-top: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0; }
+          main#homepage #hero #mobile-event-details #mobile-event-details-container h3 {
+            font-size: 13px;
+            line-height: 22px;
+            font-weight: bold;
+            margin: 0; }
+          main#homepage #hero #mobile-event-details #mobile-event-details-container address {
+            font-size: 13px; }
+    main#homepage #our-speakers {
+      margin-top: 20vh; }
+      main#homepage #our-speakers .uk-width-2-3\@m {
+        margin-left: auto; }
+        main#homepage #our-speakers .uk-width-2-3\@m #featured-speaker-3 figure {
+          width: 84vw; }
+      main#homepage #our-speakers .row {
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+        width: 105%; }
+        main#homepage #our-speakers .row:nth-of-type(2) {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          padding-top: 1.5em;
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+          order: 3; }
+          main#homepage #our-speakers .row:nth-of-type(2) #speakers-button-container {
+            padding-top: 10vh;
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2; }
+            main#homepage #our-speakers .row:nth-of-type(2) #speakers-button-container .button {
+              width: 95%; }
+      main#homepage #our-speakers figure figcaption {
+        width: 100%; }
+      main#homepage #our-speakers #featured-speaker-1,
+      main#homepage #our-speakers #featured-speaker-2,
+      main#homepage #our-speakers #featured-speaker-4,
+      main#homepage #our-speakers #featured-speaker-5 {
+        padding-top: 0 !important;
+        margin-top: 0 !important; }
+    main#homepage #past-talks .uk-width-2-3\@m {
+      margin-left: auto; }
+      main#homepage #past-talks .uk-width-2-3\@m button {
+        width: 100%; }
+    main#homepage #past-talks #past-talks-items .row button {
+      margin-bottom: 2em; }
+    main#homepage #past-talks #past-talks-items .row:nth-of-type(2) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+      main#homepage #past-talks #past-talks-items .row:nth-of-type(2) #more-talks-button-container {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+        main#homepage #past-talks #past-talks-items .row:nth-of-type(2) #more-talks-button-container #more-talks-button {
+          margin-top: 2em;
+          width: 91%; }
+    main#homepage #newsletter-signup {
+      padding: 15vh 0 !important; }
+      main#homepage #newsletter-signup .uk-width-2-3\@m {
+        margin-left: auto; }
+      main#homepage #newsletter-signup #newsletter-signup-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        main#homepage #newsletter-signup #newsletter-signup-form .button {
+          margin-top: 1em;
+          width: 100%; }
+      main#homepage #newsletter-signup #social-media-links {
+        width: 100%;
+        padding-top: 2em; }
+        main#homepage #newsletter-signup #social-media-links h2 {
+          font-weight: bolder;
+          margin: 0;
+          padding-bottom: 0.4em; }
+          main#homepage #newsletter-signup #social-media-links h2 {
+            font-size: 19px; } }
+        @media screen and (max-width: 500px) and (min-width: 425px) {
+          main#homepage #newsletter-signup #social-media-links h2 {
+            font-size: calc(19px + 6 * ((100vw - 425px) / 2135)); } }
+        @media screen and (max-width: 500px) and (min-width: 2560px) {
+          main#homepage #newsletter-signup #social-media-links h2 {
+            font-size: 25px; } }
+  @media screen and (max-width: 500px) {
+        main#homepage #newsletter-signup #social-media-links a {
+          color: #000; }
+          main#homepage #newsletter-signup #social-media-links a i {
+            font-size: 34px;
+            margin-right: 0.3em; } }
 
 .uk-modal-dialog iframe {
   padding-top: 1em; }
