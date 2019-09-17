@@ -1,0 +1,18 @@
+main#tickets {
+  padding: 0;
+  padding-top: 3em;
+  background-color: #F8F7FA;
+
+  #eventbrite-widget-container-70857987147 {
+    height: 81vh !important;
+    width: 100vw !important;
+
+    iframe body {
+      background: #fff !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 100vh !important;
+    }
+  }
+}

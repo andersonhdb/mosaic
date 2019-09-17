@@ -432,6 +432,19 @@ main#speakers {
     main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-left, main#speakers #speaker-slideshow .uk-slidenav.uk-position-center-right {
       margin-top: -35vh; } }
 
+main#tickets {
+  padding: 0;
+  padding-top: 3em;
+  background-color: #F8F7FA; }
+  main#tickets #eventbrite-widget-container-70857987147 {
+    height: 81vh !important;
+    width: 100vw !important; }
+    main#tickets #eventbrite-widget-container-70857987147 iframe body {
+      background: #fff !important; }
+    @media screen and (max-width: 768px) {
+      main#tickets #eventbrite-widget-container-70857987147 {
+        height: 100vh !important; } }
+
 main#team, main#partners {
   height: 100vh;
   padding: 4vw 8vw;
