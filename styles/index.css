@@ -1085,6 +1085,8 @@ main#homepage {
     padding: 28vh 0; }
     main#homepage #newsletter-signup p {
       line-height: 20px; }
+    main#homepage #newsletter-signup #social-media-links {
+      display: none; }
   main#homepage #newsletter-signup-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1247,6 +1249,7 @@ main#homepage {
           margin-top: 1em;
           width: 100%; }
       main#homepage #newsletter-signup #social-media-links {
+        display: block;
         width: 100%;
         padding-top: 2em; }
         main#homepage #newsletter-signup #social-media-links h2 {

@@ -284,6 +284,10 @@ main#homepage {
     p {
       line-height: 20px;
     }
+
+    #social-media-links {
+      display: none;
+    }
   }
 
   #newsletter-signup-form {
@@ -473,6 +477,7 @@ main#homepage {
       }
 
       #social-media-links {
+        display: block;
         width: 100%;
         padding-top: 2em;
 
