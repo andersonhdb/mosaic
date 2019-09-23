@@ -75,31 +75,31 @@
   </main>
   <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
   <script type="text/javascript">
-      var exampleCallback = function() {
-          console.log('Order complete!');
-      };
+  var exampleCallback = function() {
+    console.log('Order complete!');
+  };
 
-      window.EBWidgets.createWidget({
-          // Required
-          widgetType: 'checkout',
-          eventId: '70857987147',
-          iframeContainerId: 'eventbrite-widget-container-70857987147',
+  window.EBWidgets.createWidget({
+    // Required
+    widgetType: 'checkout',
+    eventId: '70857987147',
+    iframeContainerId: 'eventbrite-widget-container-70857987147',
 
-          // Optional
-          iframeContainerHeight: 500,
-          onOrderComplete: exampleCallback
-      });
+    // Optional
+    iframeContainerHeight: 500,
+    onOrderComplete: exampleCallback
+  });
   </script>
   <script type="text/javascript" defer>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
-    const form = document.forms['submit-to-google-sheet']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
   </script>
 </body>
 
