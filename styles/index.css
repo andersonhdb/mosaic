@@ -445,6 +445,52 @@ main#tickets {
       main#tickets #eventbrite-widget-container-70857987147 {
         height: 100vh !important; } }
 
+main#partners {
+  height: unset !important; }
+  main#partners #partner-items figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    main#partners #partner-items figure img {
+      height: auto; }
+    main#partners #partner-items figure figcaption {
+      padding-top: 1.5em;
+      -webkit-box-flex: 1;
+      -ms-flex: auto;
+      flex: auto; }
+      main#partners #partner-items figure figcaption span {
+        text-transform: uppercase; }
+      main#partners #partner-items figure figcaption h2 {
+        font-family: 'Hind Jalandhar', sans-serif;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 0.8em; }
+        main#partners #partner-items figure figcaption h2 {
+          font-size: 24px; }
+          @media screen and (min-width: 425px) {
+            main#partners #partner-items figure figcaption h2 {
+              font-size: calc(24px + 4 * ((100vw - 425px) / 2135)); } }
+          @media screen and (min-width: 2560px) {
+            main#partners #partner-items figure figcaption h2 {
+              font-size: 28px; } }
+      main#partners #partner-items figure figcaption p {
+        width: 100%; }
+        main#partners #partner-items figure figcaption p {
+          font-size: 12px; }
+          @media screen and (min-width: 425px) {
+            main#partners #partner-items figure figcaption p {
+              font-size: calc(12px + 6 * ((100vw - 425px) / 2135)); } }
+          @media screen and (min-width: 2560px) {
+            main#partners #partner-items figure figcaption p {
+              font-size: 18px; } }
+
 main#team, main#partners {
   height: 100vh;
   padding: 4vw 8vw;
