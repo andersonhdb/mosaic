@@ -219,7 +219,7 @@
         <div id="newsletter-signup-heading">
           <span>Get more updates</span>
           <h2>Sign Up</h2>
-          <p>Be the first to find out about promotions and opportunitites.</p> 
+          <p>Be the first to find out about promotions and opportunitites.</p>
           <p>You may unsubcribe at any time.</p>
         </div>
         <form name="submit-to-google-sheet" id="newsletter-signup-form">
@@ -254,17 +254,16 @@
       <iframe src="https://www.youtube-nocookie.com/embed/vjRlFCgQ1e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
     </div>
   </div>
-
   <script type="text/javascript" defer>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
-    const form = document.forms['submit-to-google-sheet']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
   </script>
 </body>
 
