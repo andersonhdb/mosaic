@@ -1,21 +1,31 @@
 main#partners {
-  height: unset !important; 
+  height: unset !important;
+
   #partner-items {
     figure {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       img {
         height: auto;
       }
 
+      a {
+        flex: unset;
+      }
+
       figcaption {
         padding-top: 1.5em;
-        flex: auto;
+
+        &.no-bio {
+          flex: auto;
+        }
+
         span {
           text-transform: uppercase;
         }
+
         h2 {
           @include fluid-type($min_width, $max_width, 24px, 28px);
           font-family: 'Hind Jalandhar', sans-serif;
@@ -23,6 +33,7 @@ main#partners {
           font-weight: bold;
           margin-top: 0.8em;
         }
+
         p {
           @include fluid-type($min_width, $max_width, 12px, 18px);
           width: 100%;

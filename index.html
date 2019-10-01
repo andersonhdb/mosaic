@@ -226,6 +226,13 @@
           <input name="email" type="email" placeholder="Your email" class="uk-width-3-4@m" required>
           <button type="submit" class="button uk-width-1-4@m">Subscribe</button>
         </form>
+        <div class="loading js-loading is-hidden">
+          <div class="loading-spinner">
+            <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+          </div>
+        </div>
+        <p class="feedback-message is-hidden js-success-message uk-width-expand">Your email address was successfully submitted. Thanks for subscribing!</p>
+        <p class="feedback-message is-hidden js-error-message uk-width-expand">Whoops - we didn't catch that. Please valid email address and try again.</p>
         <div id="social-media-links">
           <h2>Join our network</h2>
           <a href="https://www.instagram.com/tedxsfu/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -257,13 +264,38 @@
   <script type="text/javascript" defer>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
   const form = document.forms['submit-to-google-sheet']
+  const loading = document.querySelector('.js-loading')
+  const successMessage = document.querySelector('.js-success-message')
+  const errorMessage = document.querySelector('.js-error-message')
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    showLoadingIndicator()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
+      .then(response => showSuccessMessage(response))
+      .catch(error => showErrorMessage(error))
   })
+
+  function showLoadingIndicator () {
+    form.classList.add('is-hidden')
+    loading.classList.remove('is-hidden')
+  }
+
+  function showSuccessMessage (response) {
+    console.log('Your email address was successfully submitted. Thanks for subscribing!', response)
+    setTimeout(() => {
+      successMessage.classList.remove('is-hidden')
+      loading.classList.add('is-hidden')
+    }, 500)
+  }
+
+  function showErrorMessage (error) {
+    console.error("Whoops - we didn't catch that. Please valid email address and try again.", error.message)
+    setTimeout(() => {
+      errorMessage.classList.remove('is-hidden')
+      loading.classList.add('is-hidden')
+    }, 500)
+  }
   </script>
 </body>
 
