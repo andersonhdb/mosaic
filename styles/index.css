@@ -58,6 +58,27 @@ body {
 main {
   padding: 2em 2em 6em 0; }
 
+#events-banner {
+  font-family: 'Hind Jalandhar', sans-serif;
+  padding: 0.6em 0.5em;
+  background-color: #FF0037;
+  display: block;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 10; }
+  #events-banner {
+    font-size: 14px; }
+    @media screen and (min-width: 425px) {
+      #events-banner {
+        font-size: calc(14px + 4 * ((100vw - 425px) / 2135)); } }
+    @media screen and (min-width: 2560px) {
+      #events-banner {
+        font-size: 18px; } }
+  #events-banner:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+
 nav#main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
