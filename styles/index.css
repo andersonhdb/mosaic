@@ -518,7 +518,6 @@ main#partners {
               font-size: 18px; } }
 
 main#team, main#partners {
-  height: 100vh;
   padding: 4vw 8vw;
   background-color: #000; }
   main#team h1, main#partners h1 {
@@ -566,7 +565,7 @@ main#team, main#partners {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    width: 80%; }
+    width: 100%; }
     main#team #team-members figure, main#partners #team-members figure {
       display: inline-block; }
       main#team #team-members figure div, main#partners #team-members figure div {
@@ -576,23 +575,24 @@ main#team, main#partners {
           line-height: 1.8em;
           opacity: 0;
           position: absolute;
-          max-width: 238px;
+          max-width: 240px;
           height: 382px;
           margin: 0;
           z-index: 100;
           padding: 1.5em 1.5em 0;
-          background-color: #fff;
+          background-color: #000;
+          color: #fff;
           -webkit-transition: opacity 0.5s;
           -o-transition: opacity 0.5s;
           transition: opacity 0.5s; }
           main#team #team-members figure div p, main#partners #team-members figure div p {
-            font-size: 14px; }
+            font-size: 13px; }
             @media screen and (min-width: 425px) {
               main#team #team-members figure div p, main#partners #team-members figure div p {
-                font-size: calc(14px + 4 * ((100vw - 425px) / 2135)); } }
+                font-size: calc(13px + 4 * ((100vw - 425px) / 2135)); } }
             @media screen and (min-width: 2560px) {
               main#team #team-members figure div p, main#partners #team-members figure div p {
-                font-size: 18px; } }
+                font-size: 17px; } }
         main#team #team-members figure div img, main#partners #team-members figure div img {
           position: relative; }
         main#team #team-members figure div:hover p, main#partners #team-members figure div:hover p {
@@ -603,29 +603,34 @@ main#team, main#partners {
           transition: opacity 0.2s; }
       main#team #team-members figure figcaption, main#partners #team-members figure figcaption {
         display: inline-block;
-        width: 75%;
-        padding-top: 1.5em;
-        color: #000; }
+        width: 100%;
+        padding-top: 1em;
+        color: #fff; }
         main#team #team-members figure figcaption, main#partners #team-members figure figcaption {
-          font-size: 22px; }
+          font-size: 20px; }
           @media screen and (min-width: 425px) {
             main#team #team-members figure figcaption, main#partners #team-members figure figcaption {
-              font-size: calc(22px + 4 * ((100vw - 425px) / 2135)); } }
+              font-size: calc(20px + 4 * ((100vw - 425px) / 2135)); } }
           @media screen and (min-width: 2560px) {
             main#team #team-members figure figcaption, main#partners #team-members figure figcaption {
-              font-size: 26px; } }
+              font-size: 24px; } }
         main#team #team-members figure figcaption span, main#partners #team-members figure figcaption span {
           font-family: 'Hind Jalandhar', sans-serif;
           font-weight: normal;
-          display: block; }
+          display: block;
+          padding-top: 0.5em;
+          color: #fff; }
           main#team #team-members figure figcaption span, main#partners #team-members figure figcaption span {
-            font-size: 16px; }
+            font-size: 14px; }
             @media screen and (min-width: 425px) {
               main#team #team-members figure figcaption span, main#partners #team-members figure figcaption span {
-                font-size: calc(16px + 4 * ((100vw - 425px) / 2135)); } }
+                font-size: calc(14px + 4 * ((100vw - 425px) / 2135)); } }
             @media screen and (min-width: 2560px) {
               main#team #team-members figure figcaption span, main#partners #team-members figure figcaption span {
-                font-size: 20px; } }
+                font-size: 18px; } }
+      main#team #team-members figure:hover figcaption, main#partners #team-members figure:hover figcaption {
+        cursor: pointer;
+        opacity: 0.5; }
 
 main#about {
   padding: 4vw 8vw;
