@@ -677,6 +677,12 @@ main#about {
 .uk-modal-dialog iframe {
   padding-top: 1em; }
 
+main#program {
+  padding: 4vw 8vw;
+  background-color: #000; }
+  main#program #program-container img {
+    padding-bottom: 2em; }
+
 main#homepage {
   display: -webkit-box;
   display: -ms-flexbox;

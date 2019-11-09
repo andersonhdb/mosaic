@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <!-- Primary Meta Tags -->
-  <title>TEDx SFU 2019 | Tickets</title>
-  <meta name="title" content="TEDx SFU 2019 | Tickets">
+  <title>TEDx SFU 2019 | Mosaic</title>
+  <meta name="title" content="TEDx SFU 2019 | Mosaic">
   <link rel="icon" href="favicon.ico?" type="image/x-icon">
   <meta name="description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://tedxsfu.com/">
-  <meta property="og:title" content="TEDx SFU 2019 | Tickets">
+  <meta property="og:title" content="TEDx SFU 2019 | Mosaic">
   <meta property="og:description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
   <meta property="og:image" content="http://tedxsfu.com/images/mosaic_metadata_cover.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://tedxsfu.com/">
-  <meta property="twitter:title" content="TEDx SFU 2019 | Tickets">
+  <meta property="twitter:title" content="TEDx SFU 2019 | Mosaic">
   <meta property="twitter:description" content="A space where a diverse community come together to share stories. An exhibit of thoughts from individuals whose ideas form a breathtaking design. The values of diversity, unity and perspective are the foundation of what we are, a collective whole. Be fragments of the picture. Come join the Mosaic.">
   <meta property="twitter:image" content="http://tedxsfu.com/images/mosaic_metadata_cover.png">
   <!-- Google Search Console Ownership -->
@@ -97,37 +97,12 @@
     </div>
   </nav>
   <a href="/program.html" target="_blank" id="events-banner">Today's the day! View our program →</a>
-  <main id="tickets">
-    <div id="eventbrite-widget-container-70857987147"></div>
+  <main id="program">
+    <div id="program-container">
+      <img src="/images/tedxsfu-program.png" alt="program"/>
+      <img src="/images/tedxsfu-speakers.png" alt="speakers"/>
+    </div>
   </main>
-  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-  <script type="text/javascript">
-  var exampleCallback = function() {
-    console.log('Order complete!');
-  };
-
-  window.EBWidgets.createWidget({
-    // Required
-    widgetType: 'checkout',
-    eventId: '70857987147',
-    iframeContainerId: 'eventbrite-widget-container-70857987147',
-
-    // Optional
-    iframeContainerHeight: 500,
-    onOrderComplete: exampleCallback
-  });
-  </script>
-  <script type="text/javascript" defer>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-  </script>
 </body>
 
 </html>
