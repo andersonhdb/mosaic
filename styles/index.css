@@ -201,6 +201,7 @@ nav#mobile-nav {
 
 main#speakers {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #000; }
@@ -262,7 +263,7 @@ main#speakers {
           transition: opacity 0.2s; }
       main#speakers #all-speakers figure figcaption {
         display: inline-block;
-        width: 90%;
+        width: 72%;
         padding-top: 1em;
         color: #fff; }
         main#speakers #all-speakers figure figcaption {
@@ -315,7 +316,8 @@ main#speakers {
           width: 60%;
           height: 100%; }
           main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left iframe, main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left img {
-            width: 100%; }
+            width: 100%;
+            height: 100%; }
           main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left figcaption {
             font-family: 'Hind Jalandhar', sans-serif;
             font-weight: normal;
@@ -400,7 +402,9 @@ main#speakers {
               -ms-flex-direction: column;
               flex-direction: column;
               width: 100%;
-              min-height: 300px; }
+              min-height: 525px; }
+              main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left img {
+                min-height: 300px; }
               main#speakers #speaker-slideshow .uk-slideshow-items li div.slideshow-item-container figure.slideshow-content-left figcaption {
                 padding-top: 1em;
                 line-height: 2em; }
@@ -575,7 +579,11 @@ main#team, main#partners {
           line-height: 1.8em;
           opacity: 0;
           position: absolute;
+<<<<<<< HEAD
           max-width: 240px;
+=======
+          max-width: 242px;
+>>>>>>> master
           height: 382px;
           margin: 0;
           z-index: 100;
@@ -589,10 +597,17 @@ main#team, main#partners {
             font-size: 13px; }
             @media screen and (min-width: 425px) {
               main#team #team-members figure div p, main#partners #team-members figure div p {
+<<<<<<< HEAD
                 font-size: calc(13px + 4 * ((100vw - 425px) / 2135)); } }
             @media screen and (min-width: 2560px) {
               main#team #team-members figure div p, main#partners #team-members figure div p {
                 font-size: 17px; } }
+=======
+                font-size: calc(13px + 1 * ((100vw - 425px) / 2135)); } }
+            @media screen and (min-width: 2560px) {
+              main#team #team-members figure div p, main#partners #team-members figure div p {
+                font-size: 14px; } }
+>>>>>>> master
         main#team #team-members figure div img, main#partners #team-members figure div img {
           position: relative; }
         main#team #team-members figure div:hover p, main#partners #team-members figure div:hover p {
@@ -672,6 +687,12 @@ main#about {
 
 .uk-modal-dialog iframe {
   padding-top: 1em; }
+
+main#program {
+  padding: 4vw 8vw;
+  background-color: #000; }
+  main#program #program-container img {
+    padding-bottom: 2em; }
 
 main#homepage {
   display: -webkit-box;
@@ -1433,3 +1454,11 @@ main#homepage {
 
 .uk-modal-dialog iframe {
   padding-top: 1em; }
+
+#homepage{
+  background-image: url("../images/coverphoto_unravel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+

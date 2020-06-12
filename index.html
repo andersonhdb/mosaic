@@ -47,29 +47,47 @@
   <script src="https://bundle.run/formdata-polyfill@3.0.19"></script>
   <script src="https://bundle.run/promise-polyfill@8.1.3"></script>
   <script src="https://bundle.run/whatwg-fetch@3.0.0"></script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '973464043003958');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=973464043003958&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBP532P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav id="main-nav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <a href="/index.html" id="home-button"><img src="/images/tedx-logo.png" alt="TEDx SFU logo"></a>
+    <a href="index.html" id="home-button"><img src="images/tedx-logo.png" alt="TEDx SFU logo"></a>
     <ul id="main-nav-items">
-      <li><a href="/speakers.html">Speakers</a></li>
-      <li><a href="/tickets.html" target="_blank">Tickets</a></li>
-      <li><a href="/partners.html">Partners</a></li>
-      <li><a href="/team.html">Team</a></li>
-      <li><a href="/about.html">About</a></li>
+      <li><a href="speakers.html">Past Speakers</a></li>
+      <li><a href="tickets.html" target="_blank">Tickets</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
     <button class="uk-button uk-button-default" id="hamburger-menu" type="button" uk-toggle="target: #mobile-nav; animation: uk-animation-fade"><i class="fas fa-bars"></i></button>
   </nav>
   <nav id="mobile-nav">
     <ul id="mobile-nav-items">
-      <li><a href="/speakers.html">Speakers</a></li>
-      <li><a href="/tickets.html" target="_blank">Tickets</a></li>
-      <li><a href="/partners.html">Partners</a></li>
-      <li><a href="/team.html">Team</a></li>
-      <li><a href="/about.html">About</a></li>
+      <li><a href="speakers.html">Past Speakers</a></li>
+      <li><a href="tickets.html" target="_blank">Tickets</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
     <div id="social-media-links">
       <a href="https://www.instagram.com/tedxsfu/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -78,29 +96,14 @@
       <a href="https://www.linkedin.com/company/tedxsfu/" target="_blank" id="linkedin"><i class="fab fa-linkedin"></i></a>
     </div>
   </nav>
-  <a href="https://www.eventbrite.com/e/walk-the-talk-tickets-74768252857?aff=ebdssbeac" target="_blank" id="events-banner">Come to our next pre-event "Walk the Talk"! →</a>
+  <!-- <a href="/program.html" target="_blank" id="events-banner">Today's the day! View our program →</a> -->
   <main id="homepage">
     <section id="hero">
       <div id="event-details" class="uk-child-width-1-4@m">
         <div id="event-details-heading">
-          <span>2019</span>
-          <h1>Conference</h1>
-          <h2>Event Details</h2>
+          <h3>More information about our 2020<br>conference will be coming soon.<br> Follow us on social media<br>to stay up to date</h3>
         </div>
-        <div id="event-date">
-          <img src="images/clock.svg" alt="Clock Icon" />
-          <h2>November 9</h2>
-          <h3>9:00 AM - 5:00 PM</h3>
-        </div>
-        <div id="event-location">
-          <img src="images/map.svg" alt="Map Icon" />
-          <address>
-            Vancouver Playhouse
-            <br>
-            600 Hamilton Street, Vancouver BC
-          </address>
-        </div>
-        <a href="/tickets.html" target="_blank" class="button">Purchase a ticket</a>
+        <!-- <a href="tickets.html" target="_blank" class="button">Purchase a ticket</a> -->
         <div id="social-media-links">
           <h2>Join our network</h2>
           <a href="https://www.instagram.com/tedxsfu/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -111,28 +114,16 @@
       </div>
       <div id="animation" class="uk-child-width-2-4@m uk-child-width-3-4@s">
         <!-- <img src="/images/animation-placeholder.png" /> -->
-        <video src="/images/anim.mp4" muted playsinline uk-video="autoplay: inview"></video>
+        <!-- <video src="images/anim.mp4" muted playsinline uk-video="autoplay: inview"></video> -->
       </div>
       <div id="introduction" class="uk-child-width-1-4@m uk-child-width-1-4@s">
-        <img src="/images/theme.svg" alt="Theme of this Year is Mosaic" />
+        <img src="images/uravel_logo.png" alt="Theme of this Year is Unravel" />
       </div>
       <div id="mobile-event-details">
         <div id="mobile-event-details-container">
-          <div id="event-date" class="uk-width-1-2">
-            <img src="images/clock.svg" alt="Clock Icon" />
-            <h2>November 9</h2>
-            <h3>9:00 AM - 5:00 PM</h3>
-          </div>
-          <div id="event-location" class="uk-width-1-2">
-            <img src="images/map.svg" alt="Map Icon" />
-            <address>
-              Vancouver Playhouse
-              <br>
-              600 Hamilton Street, Vancouver BC
-            </address>
-          </div>
+          <h3>More information about our 2020<br>conference will be coming soon.<br> Follow us on social media<br>to stay up to date</h3>
         </div>
-        <a href="/tickets.html" target="_blank" class="button">Purchase a ticket</a>
+        <!-- <a href="tickets.html" target="_blank" class="button">Purchase a ticket</a> -->
       </div>
     </section>
     <section id="our-speakers" class="uk-width-expand">
@@ -140,31 +131,31 @@
       <div class="uk-width-2-3@m">
         <div id="our-speakers-heading">
           <span>The Year of 2019</span>
-          <h2>Our Speakers</h2>
+          <h2>Past Speakers</h2>
         </div>
         <div id="our-speakers-items">
           <div class="row uk-grid-small">
             <a href="speakers.html" id="featured-speaker-1" class="uk-width-1-3@m uk-width-1-2@s">
               <figure>
-                <img src="/images/speakers/bal-pawa.png" />
+                <img src="images/speakers/bal-pawa.png" />
                 <figcaption>Dr. Bal Pawa<span>Integrative Physician, Author, and Speaker</span></figcaption>
               </figure>
             </a>
             <a href="speakers.html" id="featured-speaker-2" class="uk-width-1-3@m uk-width-1-2@s">
               <figure>
-                <img src="/images/speakers/ashley-mcgirt.png" />
+                <img src="images/speakers/ashley-mcgirt.png" />
                 <figcaption>Ashley McGirt<span>Racial Trauma Specialist & International Speaker</span></figcaption>
               </figure>
             </a>
           </div>
           <div class="row" uk-grid>
             <div class="uk-width-1-3@m uk-width-expand@s" id="speakers-button-container">
-              <a href="/speakers.html" id="speakers-button" class="button">Meet all speakers</a>
+              <a href="speakers.html" id="speakers-button" class="button">Meet all speakers</a>
             </div>
             <div class="uk-width-2-3@m uk-width-expand@s">
               <a href="speakers.html" id="featured-speaker-3">
                 <figure>
-                  <img src="/images/thumbnails/andrew-bird.jpg" alt="Andrew Bird video thumbnail" />
+                  <img src="images/thumbnails/andrew-bird.jpg" alt="Andrew Bird video thumbnail" />
                   <figcaption>Andrew Bird<span>Motivational Speaker</span></figcaption>
                 </figure>
               </a>
@@ -173,13 +164,13 @@
           <div class="row uk-grid-small">
             <a href="speakers.html" id="featured-speaker-4" class="uk-width-1-3@m uk-width-1-2@s">
               <figure>
-                <img src="/images/speakers/rose-anza-burgess.png" />
+                <img src="images/speakers/rose-anza-burgess.png" />
                 <figcaption>Rose Anza-Burgess<span>Emerging Academic, Interdisciplinary Writer & Artist</span></figcaption>
               </figure>
             </a>
             <a href="speakers.html" id="featured-speaker-5" class="uk-width-1-3@m uk-width-1-2@s">
               <figure>
-                <img src="/images/speakers/natasha-jung.png" />
+                <img src="images/speakers/natasha-jung.png" />
                 <figcaption>Natasha Jung<span>Co-Founder and Executive Producer of Cold Tea Collective</span></figcaption>
               </figure>
             </a>
@@ -198,7 +189,7 @@
           <div class="row">
             <div class="uk-width-2-3@m uk-width-expand@s">
               <button type="button" uk-toggle="target: #dan-lok" class="video-preview-button">
-                <img src="/images/thumbnails/dan-lok.png" alt="Dan Lok video thumbnail" />
+                <img src="images/thumbnails/dan-lok.png" alt="Dan Lok video thumbnail" />
               </button>
             </div>
           </div>
@@ -208,14 +199,14 @@
             </div>
             <div class="uk-width-2-3@m uk-width-expand@s">
               <button type="button" uk-toggle="target: #mark-groves" class="video-preview-button">
-                <img src="/images/thumbnails/mark-groves.png" alt="Mark Groves video thumbnail" />
+                <img src="images/thumbnails/mark-groves.png" alt="Mark Groves video thumbnail" />
               </button>
             </div>
           </div>
           <div class="row">
             <div class="uk-width-2-3@m uk-width-expand@s">
               <button type="button" uk-toggle="target: #tamara-taggart" class="video-preview-button">
-                <img src="/images/thumbnails/tamara-taggart.png" alt="Tamara Taggart video thumbnail" />
+                <img src="images/thumbnails/tamara-taggart.png" alt="Tamara Taggart video thumbnail" />
               </button>
             </div>
           </div>
