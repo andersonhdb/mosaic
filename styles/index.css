@@ -1443,3 +1443,11 @@ main#homepage {
 
 .uk-modal-dialog iframe {
   padding-top: 1em; }
+
+#homepage{
+  background-image: url("../images/coverphoto_unravel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
