@@ -798,9 +798,11 @@ main#homepage {
         font-size: 18px; }
         @media screen and (min-width: 425px) {
           main#homepage #event-details h3 {
+            font-family: 'Porter', sans-serif;
             font-size: calc(18px + 10 * ((100vw - 425px) / 2135)); } }
         @media screen and (min-width: 2560px) {
           main#homepage #event-details h3 {
+            font-family: 'Porter', sans-serif;
             font-size: 28px; } }
     main#homepage #event-details #event-details-heading {
       width: 100%; }
@@ -820,7 +822,9 @@ main#homepage {
             font-size: 28px; } }
     main#homepage #event-details #social-media-links {
       width: 100%; 
-      margin-bottom: 6rem;}
+      margin-bottom: 6rem;
+      margin-top: 1rem;
+    }
       main#homepage #event-details #social-media-links h2 {
         padding-bottom: 0.4em;
         font-size: 20pt; 
