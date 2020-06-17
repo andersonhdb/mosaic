@@ -1411,7 +1411,7 @@ main#homepage {
         width: 100%; }
     main#homepage #past-talks #past-talks-items .row button {
       margin-bottom: 2em; }
-    main#homepage #past-talks #past-talks-items .row:nth-of-type(2) {
+    main#homepage #past-talks #past-talks-items .row:nth-of-type(1) {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1422,11 +1422,11 @@ main#homepage {
       -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
       order: 3; }
-      main#homepage #past-talks #past-talks-items .row:nth-of-type(2) #more-talks-button-container {
+      main#homepage #past-talks #past-talks-items .row:nth-of-type(1) #more-talks-button-container {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2; }
-        main#homepage #past-talks #past-talks-items .row:nth-of-type(2) #more-talks-button-container #more-talks-button {
+        main#homepage #past-talks #past-talks-items .row:nth-of-type(1) #more-talks-button-container #more-talks-button {
           margin-top: 2em;
           width: 91%; }
     main#homepage #newsletter-signup {
