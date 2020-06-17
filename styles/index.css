@@ -795,6 +795,7 @@ main#homepage {
       font-weight: bolder;
       margin: 0; }
       main#homepage #event-details h3 {
+        font-family: 'Porter', sans-serif;
         font-size: 18px; }
         @media screen and (min-width: 425px) {
           main#homepage #event-details h3 {
@@ -1322,8 +1323,8 @@ main#homepage {
       main#homepage #hero #introduction {
         height: 90vw; }
       main#homepage #hero #mobile-event-details {
-        display: block;
-        font-family: 'Hind Jalandhar', sans-serif;
+        display: inline-block;
+        font-family: 'Porter', sans-serif;
         font-weight: 600;
         color: #000;
         margin: 0 auto;
@@ -1332,26 +1333,40 @@ main#homepage {
         main#homepage #hero #mobile-event-details .button {
           width: 92%;
           margin: 1em 0; }
-        main#homepage #hero #mobile-event-details #mobile-event-details-container {
+        /* main#homepage #hero #mobile-event-details #mobile-event-details-container {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
           -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row; } */
           main#homepage #hero #mobile-event-details #mobile-event-details-container h2 {
             padding-top: 20px;
             font-size: 13px;
             font-weight: bold;
             margin: 0; }
           main#homepage #hero #mobile-event-details #mobile-event-details-container h3 {
-            font-size: 13px;
+            font-family: 'Porter', sans-serif;
+            font-size: 16px;
             line-height: 22px;
             font-weight: bold;
             margin: 0; }
           main#homepage #hero #mobile-event-details #mobile-event-details-container address {
             font-size: 13px; }
+
+          main#homepage #hero #mobile-event-details #mobile-event-details-container #social-media-links{
+            margin-top: 20px;
+            text-align: center;
+          }
+          
+          main#homepage #hero #mobile-event-details #mobile-event-details-container #social-media-links a{
+            color: #E00;
+          }
+          main#homepage #hero #mobile-event-details #mobile-event-details-container #social-media-links a i{
+            font-size: 40px;
+            margin-right: 20px;
+          }
     main#homepage #our-speakers {
       margin-top: 20vh; }
       main#homepage #our-speakers .uk-width-2-3\@m {
