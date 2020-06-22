@@ -18,6 +18,11 @@ main#homepage {
   display: flex;
   flex-direction: column;
   padding: 0;
+  background-image: url("../images/coverphoto_unravel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
   .button {
     @include fluid-type($min_width, $max_width, 19px, 25px);
@@ -62,11 +67,11 @@ main#homepage {
     justify-content: space-between;
     min-height: 585px;
     height: 70vh;
-    margin: 0;
+    margin: auto;
+    margin-top: 22vh;
     padding: 3vw;
     font-family: 'Hind Jalandhar', sans-serif;
     color: #000;
-    position: fixed;
 
     img {
       width: 24px;
@@ -92,8 +97,15 @@ main#homepage {
 
     h3 {
       @include fluid-type($min_width, $max_width, 18px, 28px);
+      text-align: center;
+      font-family: 'Porter', sans-serif;
       font-weight: bolder;
       margin: 0;
+
+      span{
+        font-family: sans-serif;
+        font-weight: bold;
+      }
     }
 
     #event-details-heading {
@@ -113,6 +125,8 @@ main#homepage {
 
     #social-media-links {
       width: 100%;
+      display: inline-block;
+      text-align: center;
 
       h2 {
         padding-bottom: 0.4em;
@@ -122,8 +136,10 @@ main#homepage {
         color: #000;
 
         i {
-          font-size: 34px;
+          color: #D00;
+          font-size: 48px;
           margin-right: 0.3em;
+          margin-top: 1rem;
         }
       }
     }
@@ -162,6 +178,10 @@ main#homepage {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+
+    &>div{
+      margin: auto;
+    }
 
     #our-speakers-heading,
     #past-talks-heading,
@@ -406,6 +426,7 @@ main#homepage {
         color: #000;
         margin: 0 auto;
         width: 100%;
+        margin-top: 25vh;
         padding-top: 5vh;
 
         .button {
@@ -414,8 +435,7 @@ main#homepage {
         }
 
         #mobile-event-details-container {
-          display: flex;
-          flex-direction: row;
+          text-align: center;
 
           h2 {
             padding-top: 20px;
@@ -425,14 +445,32 @@ main#homepage {
           }
 
           h3 {
-            font-size: 13px;
+            font-family: 'Porter', sans-serif;
+            font-size: 12px;
             line-height: 22px;
             font-weight: bold;
             margin: 0;
+
+            span{
+              font-family: sans-serif;
+              font-weight: bold;
+            }
           }
 
           address {
             font-size: 13px;
+          }
+
+          #social-media-links{
+            margin-top: 1rem;
+            a{
+              color: #D00;
+
+              i{
+                font-size: 20pt;
+                margin-right: 0.5rem;
+              }
+            }
           }
         }
       }
