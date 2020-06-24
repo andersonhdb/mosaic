@@ -980,7 +980,7 @@ main#homepage #event-details #social-media-links a {
   color: #000;
 }
 main#homepage #event-details #social-media-links a i {
-  color: #D00;
+  color: #e62b1e;
   font-size: 48px;
   margin-right: 0.3em;
   margin-top: 1rem;
@@ -1008,6 +1008,7 @@ main#homepage #introduction img {
     height: 48.1vw;
   }
 }
+main#homepage #testimonials,
 main#homepage #our-speakers,
 main#homepage #past-talks,
 main#homepage #newsletter-signup {
@@ -1016,17 +1017,25 @@ main#homepage #newsletter-signup {
   display: flex;
   flex-direction: row;
 }
+main#homepage #testimonials > div,
 main#homepage #our-speakers > div,
 main#homepage #past-talks > div,
 main#homepage #newsletter-signup > div {
   margin: auto;
 }
+main#homepage #testimonials #testimonials-heading span,
+main#homepage #testimonials #our-speakers-heading span,
+main#homepage #testimonials #past-talks-heading span,
+main#homepage #testimonials #newsletter-signup-heading span,
+main#homepage #our-speakers #testimonials-heading span,
 main#homepage #our-speakers #our-speakers-heading span,
 main#homepage #our-speakers #past-talks-heading span,
 main#homepage #our-speakers #newsletter-signup-heading span,
+main#homepage #past-talks #testimonials-heading span,
 main#homepage #past-talks #our-speakers-heading span,
 main#homepage #past-talks #past-talks-heading span,
 main#homepage #past-talks #newsletter-signup-heading span,
+main#homepage #newsletter-signup #testimonials-heading span,
 main#homepage #newsletter-signup #our-speakers-heading span,
 main#homepage #newsletter-signup #past-talks-heading span,
 main#homepage #newsletter-signup #newsletter-signup-heading span {
@@ -1034,24 +1043,38 @@ main#homepage #newsletter-signup #newsletter-signup-heading span {
   font-weight: 600;
   color: #000;
 }
+main#homepage #testimonials #testimonials-heading span,
+main#homepage #testimonials #our-speakers-heading span,
+main#homepage #testimonials #past-talks-heading span,
+main#homepage #testimonials #newsletter-signup-heading span,
+main#homepage #our-speakers #testimonials-heading span,
 main#homepage #our-speakers #our-speakers-heading span,
 main#homepage #our-speakers #past-talks-heading span,
 main#homepage #our-speakers #newsletter-signup-heading span,
+main#homepage #past-talks #testimonials-heading span,
 main#homepage #past-talks #our-speakers-heading span,
 main#homepage #past-talks #past-talks-heading span,
 main#homepage #past-talks #newsletter-signup-heading span,
+main#homepage #newsletter-signup #testimonials-heading span,
 main#homepage #newsletter-signup #our-speakers-heading span,
 main#homepage #newsletter-signup #past-talks-heading span,
 main#homepage #newsletter-signup #newsletter-signup-heading span {
   font-size: 10px;
 }
 @media screen and (min-width: 425px) {
-  main#homepage #our-speakers #our-speakers-heading span,
+  main#homepage #testimonials #testimonials-heading span,
+main#homepage #testimonials #our-speakers-heading span,
+main#homepage #testimonials #past-talks-heading span,
+main#homepage #testimonials #newsletter-signup-heading span,
+main#homepage #our-speakers #testimonials-heading span,
+main#homepage #our-speakers #our-speakers-heading span,
 main#homepage #our-speakers #past-talks-heading span,
 main#homepage #our-speakers #newsletter-signup-heading span,
+main#homepage #past-talks #testimonials-heading span,
 main#homepage #past-talks #our-speakers-heading span,
 main#homepage #past-talks #past-talks-heading span,
 main#homepage #past-talks #newsletter-signup-heading span,
+main#homepage #newsletter-signup #testimonials-heading span,
 main#homepage #newsletter-signup #our-speakers-heading span,
 main#homepage #newsletter-signup #past-talks-heading span,
 main#homepage #newsletter-signup #newsletter-signup-heading span {
@@ -1059,24 +1082,38 @@ main#homepage #newsletter-signup #newsletter-signup-heading span {
   }
 }
 @media screen and (min-width: 2560px) {
-  main#homepage #our-speakers #our-speakers-heading span,
+  main#homepage #testimonials #testimonials-heading span,
+main#homepage #testimonials #our-speakers-heading span,
+main#homepage #testimonials #past-talks-heading span,
+main#homepage #testimonials #newsletter-signup-heading span,
+main#homepage #our-speakers #testimonials-heading span,
+main#homepage #our-speakers #our-speakers-heading span,
 main#homepage #our-speakers #past-talks-heading span,
 main#homepage #our-speakers #newsletter-signup-heading span,
+main#homepage #past-talks #testimonials-heading span,
 main#homepage #past-talks #our-speakers-heading span,
 main#homepage #past-talks #past-talks-heading span,
 main#homepage #past-talks #newsletter-signup-heading span,
+main#homepage #newsletter-signup #testimonials-heading span,
 main#homepage #newsletter-signup #our-speakers-heading span,
 main#homepage #newsletter-signup #past-talks-heading span,
 main#homepage #newsletter-signup #newsletter-signup-heading span {
     font-size: 22px;
   }
 }
+main#homepage #testimonials #testimonials-heading h2,
+main#homepage #testimonials #our-speakers-heading h2,
+main#homepage #testimonials #past-talks-heading h2,
+main#homepage #testimonials #newsletter-signup-heading h2,
+main#homepage #our-speakers #testimonials-heading h2,
 main#homepage #our-speakers #our-speakers-heading h2,
 main#homepage #our-speakers #past-talks-heading h2,
 main#homepage #our-speakers #newsletter-signup-heading h2,
+main#homepage #past-talks #testimonials-heading h2,
 main#homepage #past-talks #our-speakers-heading h2,
 main#homepage #past-talks #past-talks-heading h2,
 main#homepage #past-talks #newsletter-signup-heading h2,
+main#homepage #newsletter-signup #testimonials-heading h2,
 main#homepage #newsletter-signup #our-speakers-heading h2,
 main#homepage #newsletter-signup #past-talks-heading h2,
 main#homepage #newsletter-signup #newsletter-signup-heading h2 {
@@ -1086,24 +1123,38 @@ main#homepage #newsletter-signup #newsletter-signup-heading h2 {
   line-height: 1.5em;
   color: #000;
 }
+main#homepage #testimonials #testimonials-heading h2,
+main#homepage #testimonials #our-speakers-heading h2,
+main#homepage #testimonials #past-talks-heading h2,
+main#homepage #testimonials #newsletter-signup-heading h2,
+main#homepage #our-speakers #testimonials-heading h2,
 main#homepage #our-speakers #our-speakers-heading h2,
 main#homepage #our-speakers #past-talks-heading h2,
 main#homepage #our-speakers #newsletter-signup-heading h2,
+main#homepage #past-talks #testimonials-heading h2,
 main#homepage #past-talks #our-speakers-heading h2,
 main#homepage #past-talks #past-talks-heading h2,
 main#homepage #past-talks #newsletter-signup-heading h2,
+main#homepage #newsletter-signup #testimonials-heading h2,
 main#homepage #newsletter-signup #our-speakers-heading h2,
 main#homepage #newsletter-signup #past-talks-heading h2,
 main#homepage #newsletter-signup #newsletter-signup-heading h2 {
   font-size: 16px;
 }
 @media screen and (min-width: 425px) {
-  main#homepage #our-speakers #our-speakers-heading h2,
+  main#homepage #testimonials #testimonials-heading h2,
+main#homepage #testimonials #our-speakers-heading h2,
+main#homepage #testimonials #past-talks-heading h2,
+main#homepage #testimonials #newsletter-signup-heading h2,
+main#homepage #our-speakers #testimonials-heading h2,
+main#homepage #our-speakers #our-speakers-heading h2,
 main#homepage #our-speakers #past-talks-heading h2,
 main#homepage #our-speakers #newsletter-signup-heading h2,
+main#homepage #past-talks #testimonials-heading h2,
 main#homepage #past-talks #our-speakers-heading h2,
 main#homepage #past-talks #past-talks-heading h2,
 main#homepage #past-talks #newsletter-signup-heading h2,
+main#homepage #newsletter-signup #testimonials-heading h2,
 main#homepage #newsletter-signup #our-speakers-heading h2,
 main#homepage #newsletter-signup #past-talks-heading h2,
 main#homepage #newsletter-signup #newsletter-signup-heading h2 {
@@ -1111,24 +1162,38 @@ main#homepage #newsletter-signup #newsletter-signup-heading h2 {
   }
 }
 @media screen and (min-width: 2560px) {
-  main#homepage #our-speakers #our-speakers-heading h2,
+  main#homepage #testimonials #testimonials-heading h2,
+main#homepage #testimonials #our-speakers-heading h2,
+main#homepage #testimonials #past-talks-heading h2,
+main#homepage #testimonials #newsletter-signup-heading h2,
+main#homepage #our-speakers #testimonials-heading h2,
+main#homepage #our-speakers #our-speakers-heading h2,
 main#homepage #our-speakers #past-talks-heading h2,
 main#homepage #our-speakers #newsletter-signup-heading h2,
+main#homepage #past-talks #testimonials-heading h2,
 main#homepage #past-talks #our-speakers-heading h2,
 main#homepage #past-talks #past-talks-heading h2,
 main#homepage #past-talks #newsletter-signup-heading h2,
+main#homepage #newsletter-signup #testimonials-heading h2,
 main#homepage #newsletter-signup #our-speakers-heading h2,
 main#homepage #newsletter-signup #past-talks-heading h2,
 main#homepage #newsletter-signup #newsletter-signup-heading h2 {
     font-size: 50px;
   }
 }
+main#homepage #testimonials #testimonials-heading p,
+main#homepage #testimonials #our-speakers-heading p,
+main#homepage #testimonials #past-talks-heading p,
+main#homepage #testimonials #newsletter-signup-heading p,
+main#homepage #our-speakers #testimonials-heading p,
 main#homepage #our-speakers #our-speakers-heading p,
 main#homepage #our-speakers #past-talks-heading p,
 main#homepage #our-speakers #newsletter-signup-heading p,
+main#homepage #past-talks #testimonials-heading p,
 main#homepage #past-talks #our-speakers-heading p,
 main#homepage #past-talks #past-talks-heading p,
 main#homepage #past-talks #newsletter-signup-heading p,
+main#homepage #newsletter-signup #testimonials-heading p,
 main#homepage #newsletter-signup #our-speakers-heading p,
 main#homepage #newsletter-signup #past-talks-heading p,
 main#homepage #newsletter-signup #newsletter-signup-heading p {
@@ -1137,24 +1202,38 @@ main#homepage #newsletter-signup #newsletter-signup-heading p {
   line-height: 1em;
   color: #000;
 }
+main#homepage #testimonials #testimonials-heading p,
+main#homepage #testimonials #our-speakers-heading p,
+main#homepage #testimonials #past-talks-heading p,
+main#homepage #testimonials #newsletter-signup-heading p,
+main#homepage #our-speakers #testimonials-heading p,
 main#homepage #our-speakers #our-speakers-heading p,
 main#homepage #our-speakers #past-talks-heading p,
 main#homepage #our-speakers #newsletter-signup-heading p,
+main#homepage #past-talks #testimonials-heading p,
 main#homepage #past-talks #our-speakers-heading p,
 main#homepage #past-talks #past-talks-heading p,
 main#homepage #past-talks #newsletter-signup-heading p,
+main#homepage #newsletter-signup #testimonials-heading p,
 main#homepage #newsletter-signup #our-speakers-heading p,
 main#homepage #newsletter-signup #past-talks-heading p,
 main#homepage #newsletter-signup #newsletter-signup-heading p {
   font-size: 14px;
 }
 @media screen and (min-width: 425px) {
-  main#homepage #our-speakers #our-speakers-heading p,
+  main#homepage #testimonials #testimonials-heading p,
+main#homepage #testimonials #our-speakers-heading p,
+main#homepage #testimonials #past-talks-heading p,
+main#homepage #testimonials #newsletter-signup-heading p,
+main#homepage #our-speakers #testimonials-heading p,
+main#homepage #our-speakers #our-speakers-heading p,
 main#homepage #our-speakers #past-talks-heading p,
 main#homepage #our-speakers #newsletter-signup-heading p,
+main#homepage #past-talks #testimonials-heading p,
 main#homepage #past-talks #our-speakers-heading p,
 main#homepage #past-talks #past-talks-heading p,
 main#homepage #past-talks #newsletter-signup-heading p,
+main#homepage #newsletter-signup #testimonials-heading p,
 main#homepage #newsletter-signup #our-speakers-heading p,
 main#homepage #newsletter-signup #past-talks-heading p,
 main#homepage #newsletter-signup #newsletter-signup-heading p {
@@ -1162,36 +1241,56 @@ main#homepage #newsletter-signup #newsletter-signup-heading p {
   }
 }
 @media screen and (min-width: 2560px) {
-  main#homepage #our-speakers #our-speakers-heading p,
+  main#homepage #testimonials #testimonials-heading p,
+main#homepage #testimonials #our-speakers-heading p,
+main#homepage #testimonials #past-talks-heading p,
+main#homepage #testimonials #newsletter-signup-heading p,
+main#homepage #our-speakers #testimonials-heading p,
+main#homepage #our-speakers #our-speakers-heading p,
 main#homepage #our-speakers #past-talks-heading p,
 main#homepage #our-speakers #newsletter-signup-heading p,
+main#homepage #past-talks #testimonials-heading p,
 main#homepage #past-talks #our-speakers-heading p,
 main#homepage #past-talks #past-talks-heading p,
 main#homepage #past-talks #newsletter-signup-heading p,
+main#homepage #newsletter-signup #testimonials-heading p,
 main#homepage #newsletter-signup #our-speakers-heading p,
 main#homepage #newsletter-signup #past-talks-heading p,
 main#homepage #newsletter-signup #newsletter-signup-heading p {
     font-size: 18px;
   }
 }
+main#homepage #testimonials #past-talks-heading,
 main#homepage #our-speakers #past-talks-heading,
 main#homepage #past-talks #past-talks-heading,
 main#homepage #newsletter-signup #past-talks-heading {
   padding-bottom: 2em;
 }
+main#homepage #testimonials #testimonials-items,
+main#homepage #testimonials #our-speakers-items,
+main#homepage #testimonials #past-talks-items,
+main#homepage #our-speakers #testimonials-items,
 main#homepage #our-speakers #our-speakers-items,
 main#homepage #our-speakers #past-talks-items,
+main#homepage #past-talks #testimonials-items,
 main#homepage #past-talks #our-speakers-items,
 main#homepage #past-talks #past-talks-items,
+main#homepage #newsletter-signup #testimonials-items,
 main#homepage #newsletter-signup #our-speakers-items,
 main#homepage #newsletter-signup #past-talks-items {
   display: flex;
   flex-direction: column;
 }
+main#homepage #testimonials #testimonials-items .video-preview-button,
+main#homepage #testimonials #our-speakers-items .video-preview-button,
+main#homepage #testimonials #past-talks-items .video-preview-button,
+main#homepage #our-speakers #testimonials-items .video-preview-button,
 main#homepage #our-speakers #our-speakers-items .video-preview-button,
 main#homepage #our-speakers #past-talks-items .video-preview-button,
+main#homepage #past-talks #testimonials-items .video-preview-button,
 main#homepage #past-talks #our-speakers-items .video-preview-button,
 main#homepage #past-talks #past-talks-items .video-preview-button,
+main#homepage #newsletter-signup #testimonials-items .video-preview-button,
 main#homepage #newsletter-signup #our-speakers-items .video-preview-button,
 main#homepage #newsletter-signup #past-talks-items .video-preview-button {
   background-color: transparent;
@@ -1199,28 +1298,46 @@ main#homepage #newsletter-signup #past-talks-items .video-preview-button {
   padding: 0;
   margin-bottom: 8em;
 }
+main#homepage #testimonials #testimonials-items .video-preview-button:hover,
+main#homepage #testimonials #our-speakers-items .video-preview-button:hover,
+main#homepage #testimonials #past-talks-items .video-preview-button:hover,
+main#homepage #our-speakers #testimonials-items .video-preview-button:hover,
 main#homepage #our-speakers #our-speakers-items .video-preview-button:hover,
 main#homepage #our-speakers #past-talks-items .video-preview-button:hover,
+main#homepage #past-talks #testimonials-items .video-preview-button:hover,
 main#homepage #past-talks #our-speakers-items .video-preview-button:hover,
 main#homepage #past-talks #past-talks-items .video-preview-button:hover,
+main#homepage #newsletter-signup #testimonials-items .video-preview-button:hover,
 main#homepage #newsletter-signup #our-speakers-items .video-preview-button:hover,
 main#homepage #newsletter-signup #past-talks-items .video-preview-button:hover {
   cursor: pointer;
 }
+main#homepage #testimonials #testimonials-items .row,
+main#homepage #testimonials #our-speakers-items .row,
+main#homepage #testimonials #past-talks-items .row,
+main#homepage #our-speakers #testimonials-items .row,
 main#homepage #our-speakers #our-speakers-items .row,
 main#homepage #our-speakers #past-talks-items .row,
+main#homepage #past-talks #testimonials-items .row,
 main#homepage #past-talks #our-speakers-items .row,
 main#homepage #past-talks #past-talks-items .row,
+main#homepage #newsletter-signup #testimonials-items .row,
 main#homepage #newsletter-signup #our-speakers-items .row,
 main#homepage #newsletter-signup #past-talks-items .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+main#homepage #testimonials #testimonials-items .row:nth-of-type(2),
+main#homepage #testimonials #our-speakers-items .row:nth-of-type(2),
+main#homepage #testimonials #past-talks-items .row:nth-of-type(2),
+main#homepage #our-speakers #testimonials-items .row:nth-of-type(2),
 main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2),
 main#homepage #our-speakers #past-talks-items .row:nth-of-type(2),
+main#homepage #past-talks #testimonials-items .row:nth-of-type(2),
 main#homepage #past-talks #our-speakers-items .row:nth-of-type(2),
 main#homepage #past-talks #past-talks-items .row:nth-of-type(2),
+main#homepage #newsletter-signup #testimonials-items .row:nth-of-type(2),
 main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2),
 main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) {
   display: flex;
@@ -1228,66 +1345,110 @@ main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) {
   justify-content: center;
   align-items: center;
 }
+main#homepage #testimonials #testimonials-items .row:nth-of-type(2) figcaption,
+main#homepage #testimonials #our-speakers-items .row:nth-of-type(2) figcaption,
+main#homepage #testimonials #past-talks-items .row:nth-of-type(2) figcaption,
+main#homepage #our-speakers #testimonials-items .row:nth-of-type(2) figcaption,
 main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) figcaption,
 main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) figcaption,
+main#homepage #past-talks #testimonials-items .row:nth-of-type(2) figcaption,
 main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) figcaption,
 main#homepage #past-talks #past-talks-items .row:nth-of-type(2) figcaption,
+main#homepage #newsletter-signup #testimonials-items .row:nth-of-type(2) figcaption,
 main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) figcaption,
 main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) figcaption {
   margin-bottom: 3em;
 }
+main#homepage #testimonials #testimonials-items .row:nth-of-type(2) .button,
+main#homepage #testimonials #our-speakers-items .row:nth-of-type(2) .button,
+main#homepage #testimonials #past-talks-items .row:nth-of-type(2) .button,
+main#homepage #our-speakers #testimonials-items .row:nth-of-type(2) .button,
 main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button,
 main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button,
+main#homepage #past-talks #testimonials-items .row:nth-of-type(2) .button,
 main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button,
 main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button,
+main#homepage #newsletter-signup #testimonials-items .row:nth-of-type(2) .button,
 main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button,
 main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button {
   display: block;
   width: 80%;
 }
+main#homepage #testimonials #testimonials-items .row:nth-of-type(2) .button#speakers-button,
+main#homepage #testimonials #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
+main#homepage #testimonials #past-talks-items .row:nth-of-type(2) .button#speakers-button,
+main#homepage #our-speakers #testimonials-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#speakers-button,
+main#homepage #past-talks #testimonials-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button#speakers-button,
+main#homepage #newsletter-signup #testimonials-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button#speakers-button,
 main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button#speakers-button {
   margin-top: -5.5em;
 }
+main#homepage #testimonials #testimonials-items .row:nth-of-type(2) .button#more-talks-button,
+main#homepage #testimonials #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
+main#homepage #testimonials #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
+main#homepage #our-speakers #testimonials-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #our-speakers #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #our-speakers #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
+main#homepage #past-talks #testimonials-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #past-talks #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #past-talks #past-talks-items .row:nth-of-type(2) .button#more-talks-button,
+main#homepage #newsletter-signup #testimonials-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #newsletter-signup #our-speakers-items .row:nth-of-type(2) .button#more-talks-button,
 main#homepage #newsletter-signup #past-talks-items .row:nth-of-type(2) .button#more-talks-button {
   margin-top: -3.5em;
 }
+main#homepage #testimonials #testimonials-items #featured-speaker-1,
+main#homepage #testimonials #testimonials-items #featured-speaker-4,
+main#homepage #testimonials #our-speakers-items #featured-speaker-1,
+main#homepage #testimonials #our-speakers-items #featured-speaker-4,
+main#homepage #testimonials #past-talks-items #featured-speaker-1,
+main#homepage #testimonials #past-talks-items #featured-speaker-4,
+main#homepage #our-speakers #testimonials-items #featured-speaker-1,
+main#homepage #our-speakers #testimonials-items #featured-speaker-4,
 main#homepage #our-speakers #our-speakers-items #featured-speaker-1,
 main#homepage #our-speakers #our-speakers-items #featured-speaker-4,
 main#homepage #our-speakers #past-talks-items #featured-speaker-1,
 main#homepage #our-speakers #past-talks-items #featured-speaker-4,
+main#homepage #past-talks #testimonials-items #featured-speaker-1,
+main#homepage #past-talks #testimonials-items #featured-speaker-4,
 main#homepage #past-talks #our-speakers-items #featured-speaker-1,
 main#homepage #past-talks #our-speakers-items #featured-speaker-4,
 main#homepage #past-talks #past-talks-items #featured-speaker-1,
 main#homepage #past-talks #past-talks-items #featured-speaker-4,
+main#homepage #newsletter-signup #testimonials-items #featured-speaker-1,
+main#homepage #newsletter-signup #testimonials-items #featured-speaker-4,
 main#homepage #newsletter-signup #our-speakers-items #featured-speaker-1,
 main#homepage #newsletter-signup #our-speakers-items #featured-speaker-4,
 main#homepage #newsletter-signup #past-talks-items #featured-speaker-1,
 main#homepage #newsletter-signup #past-talks-items #featured-speaker-4 {
   padding-top: 7em;
 }
+main#homepage #testimonials #testimonials-items #featured-speaker-2,
+main#homepage #testimonials #our-speakers-items #featured-speaker-2,
+main#homepage #testimonials #past-talks-items #featured-speaker-2,
+main#homepage #our-speakers #testimonials-items #featured-speaker-2,
 main#homepage #our-speakers #our-speakers-items #featured-speaker-2,
 main#homepage #our-speakers #past-talks-items #featured-speaker-2,
+main#homepage #past-talks #testimonials-items #featured-speaker-2,
 main#homepage #past-talks #our-speakers-items #featured-speaker-2,
 main#homepage #past-talks #past-talks-items #featured-speaker-2,
+main#homepage #newsletter-signup #testimonials-items #featured-speaker-2,
 main#homepage #newsletter-signup #our-speakers-items #featured-speaker-2,
 main#homepage #newsletter-signup #past-talks-items #featured-speaker-2 {
   margin-top: -3.5em;
 }
+main#homepage #testimonials figure,
 main#homepage #our-speakers figure,
 main#homepage #past-talks figure,
 main#homepage #newsletter-signup figure {
   display: inline-block;
 }
+main#homepage #testimonials figure figcaption,
 main#homepage #our-speakers figure figcaption,
 main#homepage #past-talks figure figcaption,
 main#homepage #newsletter-signup figure figcaption {
@@ -1296,25 +1457,29 @@ main#homepage #newsletter-signup figure figcaption {
   padding-top: 1em;
   color: #000;
 }
+main#homepage #testimonials figure figcaption,
 main#homepage #our-speakers figure figcaption,
 main#homepage #past-talks figure figcaption,
 main#homepage #newsletter-signup figure figcaption {
   font-size: 13px;
 }
 @media screen and (min-width: 425px) {
-  main#homepage #our-speakers figure figcaption,
+  main#homepage #testimonials figure figcaption,
+main#homepage #our-speakers figure figcaption,
 main#homepage #past-talks figure figcaption,
 main#homepage #newsletter-signup figure figcaption {
     font-size: calc(13px + 7 * ((100vw - 425px) / 2135));
   }
 }
 @media screen and (min-width: 2560px) {
-  main#homepage #our-speakers figure figcaption,
+  main#homepage #testimonials figure figcaption,
+main#homepage #our-speakers figure figcaption,
 main#homepage #past-talks figure figcaption,
 main#homepage #newsletter-signup figure figcaption {
     font-size: 20px;
   }
 }
+main#homepage #testimonials figure figcaption span,
 main#homepage #our-speakers figure figcaption span,
 main#homepage #past-talks figure figcaption span,
 main#homepage #newsletter-signup figure figcaption span {
@@ -1323,30 +1488,38 @@ main#homepage #newsletter-signup figure figcaption span {
   display: block;
   padding-top: 0.4em;
 }
+main#homepage #testimonials figure figcaption span,
 main#homepage #our-speakers figure figcaption span,
 main#homepage #past-talks figure figcaption span,
 main#homepage #newsletter-signup figure figcaption span {
   font-size: 12px;
 }
 @media screen and (min-width: 425px) {
-  main#homepage #our-speakers figure figcaption span,
+  main#homepage #testimonials figure figcaption span,
+main#homepage #our-speakers figure figcaption span,
 main#homepage #past-talks figure figcaption span,
 main#homepage #newsletter-signup figure figcaption span {
     font-size: calc(12px + 6 * ((100vw - 425px) / 2135));
   }
 }
 @media screen and (min-width: 2560px) {
-  main#homepage #our-speakers figure figcaption span,
+  main#homepage #testimonials figure figcaption span,
+main#homepage #our-speakers figure figcaption span,
 main#homepage #past-talks figure figcaption span,
 main#homepage #newsletter-signup figure figcaption span {
     font-size: 18px;
   }
 }
+main#homepage #testimonials figure:hover figcaption,
 main#homepage #our-speakers figure:hover figcaption,
 main#homepage #past-talks figure:hover figcaption,
 main#homepage #newsletter-signup figure:hover figcaption {
   cursor: pointer;
   opacity: 0.5;
+}
+main#homepage #testimonials-items button {
+  max-width: calc(100%*1/3.001);
+  height: auto;
 }
 main#homepage #newsletter-signup {
   padding: 28vh 0;
@@ -1534,7 +1707,7 @@ main#homepage .uk-width-expand .block {
     margin-top: 1rem;
   }
   main#homepage #hero #mobile-event-details #mobile-event-details-container #social-media-links a {
-    color: #D00;
+    color: #e62b1e;
   }
   main#homepage #hero #mobile-event-details #mobile-event-details-container #social-media-links a i {
     font-size: 20pt;

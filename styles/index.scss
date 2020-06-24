@@ -136,7 +136,7 @@ main#homepage {
         color: #000;
 
         i {
-          color: #D00;
+          color: #e62b1e;
           font-size: 48px;
           margin-right: 0.3em;
           margin-top: 1rem;
@@ -171,6 +171,7 @@ main#homepage {
     }
   }
 
+  #testimonials,
   #our-speakers,
   #past-talks,
   #newsletter-signup {
@@ -183,6 +184,7 @@ main#homepage {
       margin: auto;
     }
 
+    #testimonials-heading,
     #our-speakers-heading,
     #past-talks-heading,
     #newsletter-signup-heading {
@@ -216,6 +218,7 @@ main#homepage {
     }
 
 
+    #testimonials-items,
     #our-speakers-items,
     #past-talks-items {
       display: flex;
@@ -297,6 +300,13 @@ main#homepage {
           opacity: 0.5;
         }
       }
+    }
+  }
+
+  #testimonials-items{
+    button{
+      max-width: calc(100%*1/3.001);
+      height: auto;
     }
   }
 
@@ -464,7 +474,7 @@ main#homepage {
           #social-media-links{
             margin-top: 1rem;
             a{
-              color: #D00;
+              color: #e62b1e;
 
               i{
                 font-size: 20pt;

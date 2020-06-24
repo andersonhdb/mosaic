@@ -125,6 +125,24 @@
         <!-- <a href="tickets.html" target="_blank" class="button">Purchase a ticket</a> -->
       </div>
     </section>
+    <section id="testimonials">
+      <div class="uk-width-2-3@m">
+        <div id="testimonials-heading">
+          <h2>Testimonials</h2>
+        </div>
+        <div id="testimonials-items">
+          <div class="row uk-grid-small">
+            <button type="button" uk-toggle="target: #alexa-mazzarello-testimonial" class="video-preview-button">
+              <img src="images/thumbnails/alexa-mazzarello.jpg" alt="Mark Groves video thumbnail" />
+            </button>
+            <button type="button" uk-toggle="target: #craig-cerhit-testimonial" class="video-preview-button">
+              <img src="images/thumbnails/craig-cerhit.jpg" alt="Mark Groves video thumbnail" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="our-speakers" class="uk-width-expand">
       <!-- <div class="uk-width-1-3@m block"></div> -->
       <div class="uk-width-2-3@m">
@@ -260,6 +278,22 @@
       <iframe src="https://www.youtube-nocookie.com/embed/vjRlFCgQ1e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
     </div>
   </div>
+
+  <div id="alexa-mazzarello-testimonial" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <iframe src="https://www.youtube-nocookie.com/embed/K9wY3slPUqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+    </div>
+  </div>
+  <div id="craig-cerhit-testimonial" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <iframe src="https://www.youtube-nocookie.com/embed/3GVFn23pe5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="854" height="480" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+    </div>
+  </div>
+
+
+
   <script type="text/javascript" defer>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzA9kXUm_L_g2n55fbD-XpNRSTO_wTqLqfX5Hc20wg8zz7Bt8lK/exec'
   const form = document.forms['submit-to-google-sheet']
