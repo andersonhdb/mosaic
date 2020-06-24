@@ -303,12 +303,7 @@ main#homepage {
     }
   }
 
-  #testimonials-items{
-    button{
-      max-width: calc(100%*1/3.001);
-      height: auto;
-    }
-  }
+  
 
   #newsletter-signup {
     padding: 28vh 0;
@@ -400,6 +395,13 @@ main#homepage {
   @media screen and (max-width: 1024px) {
     .uk-width-2-3\@m {
       margin-left: 2em;
+    }
+
+    #testimonials-items{
+      button{
+        max-width: 42vw;
+        margin-left: 15px;
+      }
     }
   }
 
