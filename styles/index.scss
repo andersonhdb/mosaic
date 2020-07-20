@@ -11,6 +11,7 @@
 @import 'team';
 @import 'about';
 @import 'program';
+@import 'colors';
 
 // Main Content //
 
@@ -54,7 +55,7 @@ main#homepage {
   #hero {
     display: flex;
     flex-direction: row;
-    height: 95vh;
+    height: 75vh;
   }
 
   #mobile-event-details {
@@ -65,8 +66,8 @@ main#homepage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 585px;
-    height: 70vh;
+    min-height: 20px;
+    height: 60vh;
     margin: auto;
     margin-top: 22vh;
     padding: 3vw;
@@ -142,6 +143,20 @@ main#homepage {
           margin-top: 1rem;
         }
       }
+    }
+  }
+
+  .volunteer-advertising{
+    margin: auto;
+    width: 70vw;
+    color: black;
+
+    span{
+      font-family: sans-serif;
+    }
+
+    a{
+      color: $main-red-color;
     }
   }
 
@@ -303,7 +318,18 @@ main#homepage {
     }
   }
 
+  #testimonials-items{
+    figcaption{
+      h3{
+        font-family: 'Porter', sans-serif;
+        font-size: medium;
   
+        span{
+          font-weight: 900;
+        }
+      }
+    }
+  }
 
   #newsletter-signup {
     padding: 28vh 0;
