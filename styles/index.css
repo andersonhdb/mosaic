@@ -851,7 +851,7 @@ main#homepage .button:hover {
 main#homepage #hero {
   display: flex;
   flex-direction: row;
-  height: 75vh;
+  height: 80vh;
 }
 main#homepage #mobile-event-details {
   display: none;
@@ -861,7 +861,7 @@ main#homepage #event-details {
   flex-direction: column;
   justify-content: space-between;
   min-height: 20px;
-  height: 60vh;
+  height: 70vh;
   margin: auto;
   margin-top: 22vh;
   padding: 3vw;
